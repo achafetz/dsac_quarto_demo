@@ -1,0 +1,295 @@
+---
+title: "Quarto Demo for DSAC/Eng CoP"
+subtitle: "`r paste('Medicare Growth in', params$state)`"
+author: "This guy"
+date: today
+execute:
+  echo: false
+  warning: false
+format: 
+    html:
+        toc: true
+        css: dsac-theme.css
+        code-tools: true
+        code_fold: true
+params:
+  state: "Pennsylvania"
+  start_year: 2020
+  end_year: 2024
+---
+
+```{r}
+#| label: interactive-dev
+
+# For interactive development only
+if (interactive() && !exists("params")) {
+  params <- list(
+    state = "Pennsylvania", 
+    start_year = 2020,
+    end_year = 2024
+  )
+}
+```
+
+```{r}
+#| label: dependencies
+#| warnings: false
+#| echo: false
+library(tidyverse)
+library(sf)
+library(tigris)
+library(scales)
+library(gt)
+
+options(tigris_use_cache = TRUE)
+```
+
+::: {.callout-tip}
+## Souped up version!
+
+ The differences here from the base version are that:
+ 
+ 1.   additional yaml matter (e.g. dynamic date, dynamic subtitle, default turning off code rendering)
+ 1.   code can now be viewed by the reader by clicking a link in the upper right hand corner
+ 1.   Table of Contents added for easier navigation
+ 1.   custom css formatting applied from an external css file in the repo
+ 1.   `params` added to yaml that allow us to use those repeated parameters throughout the report and allows us to use this as parameterized report template, i.e. we can render this report for every state
+
+:::
+
+::: {.callout-warning}
+
+This demo report relies on R, but you can use R, Python, Julia, and Observable.
+
+This demo report renders a document, but Quarto has a number of output options including documents, presentations, dahboards, websites, books.
+
+:::
+
+# BACKGROUND
+
+This is an **important** annual report where we look at growth in beneficiaries at the county level in `r params$state`. 
+
+```{r}
+#| label: read_data 
+#| cache: true
+
+#relative path
+data_path <- "Medicare Monthly Enrollment/2025-10/Medicare Monthly Enrollment Data_October 2025.csv"
+
+#read in data
+df <- read_csv(
+    data_path, 
+    col_types = c(year = "i", tot_benes = "d", .default = "c"),
+    name_repair = tolower
+    )
+
+```
+
+Let's take a look at what data exists in this dataset. We can get more information at [Data.CMS.gov](https://data.cms.gov/resources/medicare-monthly-enrollment-data-dictionary). The dataset contains `r scales::label_comma()(nrow(df))` rows and `r ncol(df)` columns. The dataset covers the years from `r min(df$year)` to `r max(df$year)`. For this analysis, we will only be looking at the total beneficiary counts (`tot_benes`) in `r params$state` counties from `r params$start_year` to `r params$end_year`.
+
+## Initial Munge
+
+From here we will be doing the initial munge of the data. We do the following munging steps:
+
+-   rename columns for ease of use
+-   filter down the data to the particular state and focal years
+-   limit the columns to just what are needed
+
+```{r}
+#| label: initial_munge
+
+#subset dataset
+df_lim <- df |> 
+    rename(
+        state = bene_state_desc,
+        state_abbr = bene_state_abrvtn,
+        county = bene_county_desc,
+        county_fips = bene_fips_cd
+        ) |> 
+    filter(
+        state == {params$state},
+        month == "Year",
+        bene_geo_lvl == "County",
+        year %in% c(params$start_year, params$end_year)
+        )
+
+
+# #conver to date
+# df_lim <- df_lim |> 
+#     mutate(date = str_glue("{year} {month}") |> ym()) 
+    
+#limit to cols of interest
+df_lim <- df_lim |> 
+    select(year, state, state_abbr, county, county_fips, tot_benes)
+
+```
+
+## Access Spatial Data
+
+We need to pull in the spatial data to create a map, leveraging the [`tigris` package](https://github.com/walkerke/tigris). We'll import the the shapefiles from this package and join it to the data in a later step.
+
+```{r}
+#| label: spatial
+#| cache: true
+
+# Download county boundaries for your state
+state_counties <- counties(state = unique(df_lim$state_abbr), cb = TRUE, year = max(df_lim$year))
+
+# Convert to sf object if needed
+state_counties_sf <- st_as_sf(state_counties)
+
+# Ensure FIPS codes match data format
+state_counties_sf <- state_counties_sf %>%
+  mutate(county_fips = GEOID)
+
+```
+
+# IMPORTANT ANALYSIS SECTION
+
+Time to do some calculations!
+
+## Calculate Growth Rate
+
+Here we will create the growth rate. We pivot the data and calculate the growth rate for each county.
+
+::: {.callout-important collapse="true"}
+`growth rate = (end value / start value) - 1 `
+:::
+
+```{r}
+#| label: pivot
+
+#reshape
+df_gr <- df_lim |> 
+    mutate(pd = ifelse(year == max(year), "end", "start")) |> 
+    select(-year) |> 
+    pivot_wider(
+        names_from = pd,
+        values_from = tot_benes)
+
+df_gr <- df_gr |> 
+    mutate(
+        gr_pct = (end - start) / start,
+        gr_abs = end - start)
+```
+
+## Join Data
+
+Next up its time to join the data. We have the Medicare data and we need to join it with the shapefile so we can map it. We can join the dataset using the `fips code`.
+
+::: {.callout-tip}
+
+We can show important code even if most are not shown by default, using `echo: true` in this code chunk.
+
+:::
+
+
+```{r}
+#| label: merge
+#| echo: true
+
+df_viz <- left_join(state_counties_sf, df_gr, by = "county_fips")
+
+```
+
+# VIZ
+
+Okay, time for the fun stuff - data viz!
+
+## Top Counties
+
+Here is a table (@tbl-growth-rates) with the top 5 counties and their growth rates.
+
+```{r}
+#| label: tbl-growth-rates
+#| tbl-cap: Counties with the largest growth rates
+#| output: true
+
+df_gr |> 
+    slice_max(order_by = gr_pct, n = 5) |> 
+    select(county, start, end, gr_pct) |> 
+    gt() |>  
+    fmt_number(
+        columns = c(start, end),
+        decimals = 0
+    ) |> 
+    fmt_percent(
+        columns = gr_pct,
+        decimals = 1 
+            ) |> 
+    cols_label(
+        county = "County",
+        start = params$start_year,
+        end = params$end_year,
+        gr_pct = "Growth Rate"
+    ) 
+
+```
+
+## State Map
+
+And below you can see in @fig-growth-rate here is a map of the state...
+
+```{r}
+#| label: fig-growth-rate
+#| fig-cap: County Growth Rates
+#| output: true
+
+df_viz |> 
+    ggplot() +
+    geom_sf(aes(fill = gr_pct), color = "white", size = 0.2) +
+    geom_sf_text(
+        data = df_viz |> slice_max(order_by = gr_pct, n = 5),
+        aes(label = county), na.rm = TRUE,
+        ) +
+    scale_fill_gradient2(
+        low = "#af8dc3",
+        mid = "#f7f7f7",
+        high = "#7fbf7b",
+        midpoint = 0,
+        name = "Growth (%)",
+        labels = percent_format(scale = 1)
+    ) +
+    labs(
+        x = NULL, y = NULL,
+        title = "Medicare Beneficiary Growth by County",
+        subtitle = str_glue("{params$state} | Percent change in total enrollment ({params$start_year}-{params$end_year})"),
+        caption = "Source: Medicare Monthly Enrollment Data, Data.CMS.gov"
+    ) +
+    theme_minimal() +
+    theme(
+        plot.title = element_text(face = "bold", size = 16),
+        legend.position = "top",
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid = element_blank()
+    )
+```
+
+# PARAMETERIZE
+
+::: {.callout-important}
+This qmd file now includes parameters (`params`) in the yaml. The parameters can be used through the documents (e.g. used to filter by state and years, dynamic text for titles/references).
+
+The parameters can be changed manually and re-render, but we can pass the parameters through the render command in the terminal, a makefile, or another script to run this over multiple states or year and outputs.
+
+From another Quarto or R script you could write the following code.
+
+```
+library(quarto)
+library(purrr)
+
+walk(
+  c("Kentucky", "Nebraska", "Mississippi"),
+  ~ quarto_render(
+    input = "demo.qmd",
+    execute_params = list(
+      state = .x,
+      start_year = 2020,
+      end_year = 2024
+    ),
+    output_file = paste0("medicare_growth_", .x, ".pdf")
+  )
+)
+```
+:::
