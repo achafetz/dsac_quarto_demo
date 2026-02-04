@@ -49,6 +49,55 @@
     "text": "State Map\nAnd here is a map of the state\n\ndf_viz |&gt; \n    ggplot() +\n    geom_sf(aes(fill = gr_pct), color = \"white\", size = 0.2) +\n    geom_sf_text(\n        data = df_viz |&gt; slice_max(order_by = gr_pct, n = 5),\n        aes(label = county), na.rm = TRUE,\n        ) +\n    scale_fill_gradient2(\n        low = \"#af8dc3\",\n        mid = \"#f7f7f7\",\n        high = \"#7fbf7b\",\n        midpoint = 0,\n        name = \"Growth (%)\",\n        labels = percent_format(scale = 1)\n    ) +\n    labs(\n        x = NULL, y = NULL,\n        title = \"Medicare Beneficiary Growth by County\",\n        subtitle = str_glue(\"{focus_state} | Percent change in total enrollment (2020-2024)\"),\n        caption = \"Source: Medicare Monthly Enrollment Data, Data.CMS.gov\"\n    ) +\n    theme_minimal() +\n    theme(\n        plot.title = element_text(face = \"bold\", size = 16),\n        legend.position = \"top\",\n        axis.text = element_blank(),\n        axis.ticks = element_blank(),\n        panel.grid = element_blank()\n    )\n\nWarning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not\ngive correct results for longitude/latitude data"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "",
+    "text": "This website demonstrates the power and flexibility of Quarto for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from Data.CMS.gov, you’ll see how Quarto transforms your analytical process."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "",
+    "text": "This website demonstrates the power and flexibility of Quarto for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from Data.CMS.gov, you’ll see how Quarto transforms your analytical process."
+  },
+  {
+    "objectID": "index.html#what-is-quarto",
+    "href": "index.html#what-is-quarto",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— Wickham, Çetinkaya-Rundel, and Grolemund\n\nQuarto allows you to author documents using: - Jupyter notebooks for interactive development - Plaintext markdown in your favorite editor (RStudio, VS Code, etc.)"
+  },
+  {
+    "objectID": "index.html#why-quarto-matters-for-your-analytics",
+    "href": "index.html#why-quarto-matters-for-your-analytics",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Why Quarto Matters for Your Analytics",
+    "text": "Why Quarto Matters for Your Analytics\n\nKey Benefits\n\n📊 Reproducible: Your analysis, code, and results are all in one place, ensuring anyone can recreate your work\n🤖 Automatable: Generate reports programmatically for multiple scenarios or time periods\n⚡ Dynamic: Update your data and automatically refresh all visualizations and statistics\n🌐 Open Source: Free, community-driven, and continuously improving\n\n\n\nCore Elements\nQuarto documents combine three powerful components:\n\nYAML Header (+ optional CSS): Controls document formatting, output options, and parameters\nCode Chunks: Execute code in R, Python, Julia, or Observable to generate results\nMarkdown Text: Write narrative prose and include inline code for seamless integration\n\nTogether, these elements create presentation-ready visualizations and reports with minimal effort."
+  },
+  {
+    "objectID": "index.html#explore-the-demonstrations",
+    "href": "index.html#explore-the-demonstrations",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Explore the Demonstrations",
+    "text": "Explore the Demonstrations\nI’ve created two versions of the same Medicare enrollment analysis to showcase Quarto’s flexibility:\n\n📄 Base Demo\nA standard Quarto rendered document showing the fundamental capabilities: - Clean, professional output - Integrated code and results - Basic formatting\n\n\n✨ Fancy Demo\nAn enhanced version demonstrating advanced features: - Dynamic metadata: Auto-updating date and subtitle - Code folding: Readers can toggle code visibility via a link - Table of Contents: Easy navigation through sections - Custom CSS styling: Professional branding from an external stylesheet - Parameterized reporting: Uses params in YAML for reusable templates (e.g., generate reports for all 50 states automatically)"
+  },
+  {
+    "objectID": "index.html#real-world-application",
+    "href": "index.html#real-world-application",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Real-World Application",
+    "text": "Real-World Application\nThe analysis uses Medicare monthly enrollment data from Data.CMS.gov, demonstrating how Quarto handles real government data in a reproducible, shareable format."
+  },
+  {
+    "objectID": "index.html#get-started",
+    "href": "index.html#get-started",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Get Started",
+    "text": "Get Started\nReady to learn more about implementing Quarto in your workflow? Visit the About page to understand the methodology and technical details behind these demonstrations.\n\nAll data sourced from Data.CMS.gov\nDisclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own."
+  },
+  {
     "objectID": "demo_fancy.html",
     "href": "demo_fancy.html",
     "title": "Quarto Demo for DSAC/Eng CoP",
@@ -96,5 +145,33 @@
     "title": "Quarto Demo for DSAC/Eng CoP",
     "section": "State Map",
     "text": "State Map\nAnd below you can see in Figure 1 here is a map of the state…\n\n\n\n\n\n\n\n\nFigure 1: County Growth Rates"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About This Project",
+    "section": "",
+    "text": "This website serves as a practical demonstration of Quarto’s capabilities for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.\nBy comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality."
+  },
+  {
+    "objectID": "about.html#project-purpose",
+    "href": "about.html#project-purpose",
+    "title": "About This Project",
+    "section": "",
+    "text": "This website serves as a practical demonstration of Quarto’s capabilities for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.\nBy comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality."
+  },
+  {
+    "objectID": "about.html#data-source",
+    "href": "about.html#data-source",
+    "title": "About This Project",
+    "section": "Data Source",
+    "text": "Data Source\nAll analyses use Medicare monthly enrollment data from Data.CMS.gov, the official open data portal for the Centers for Medicare & Medicaid Services.\nThis real-world dataset demonstrates how Quarto handles: - Large government datasets - Time-series analysis - Geographic variations - Reproducible reporting requirements common in healthcare analytics"
+  },
+  {
+    "objectID": "about.html#technical-implementation",
+    "href": "about.html#technical-implementation",
+    "title": "About This Project",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\n\nQuarto Components Used\n\n1. YAML Configuration\nThe YAML header controls document behavior and appearance: - Dynamic date: Automatically updates to the render date - Dynamic subtitle: Can pull from parameters or calculations - Code rendering defaults: Control whether code is shown or hidden by default - Output formats: HTML, PDF, Word, presentations, and more\n\n\n2. Code Chunks\nAnalyses are written in R (though Quarto supports Python, Julia, and Observable): - Execute data processing and visualization - Generate tables and statistics - Create interactive elements\n\n\n3. Markdown and Inline Code\nNarrative text integrates seamlessly with code results: - Explain methodology and findings - Include inline calculations (e.g., “The enrollment increased by r growth_rate%”) - Format professional reports\n\n\n\nAdvanced Features Demonstrated\n\nCode Folding\nIn the fancy demo, code is hidden by default but accessible via a “Show code” link in the upper right corner. This keeps the document clean for non-technical readers while maintaining full transparency.\nImplementation: ```yaml format: html: code-fold: true"
   }
 ]

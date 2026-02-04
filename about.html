@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Aaron Chafetz">
-<meta name="dcterms.date" content="2026-01-23">
 
-<title>Why Use Quarto for Data Analysis? – DSAC Quarto Demo</title>
+<title>About This Project – DSAC Quarto Demo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -103,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Fancy Demo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -122,20 +120,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
-  <li><a href="#why-quarto-matters-for-your-analytics" id="toc-why-quarto-matters-for-your-analytics" class="nav-link" data-scroll-target="#why-quarto-matters-for-your-analytics">Why Quarto Matters for Your Analytics</a>
+  <li><a href="#project-purpose" id="toc-project-purpose" class="nav-link active" data-scroll-target="#project-purpose">Project Purpose</a></li>
+  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical Implementation</a>
   <ul class="collapse">
-  <li><a href="#key-benefits" id="toc-key-benefits" class="nav-link" data-scroll-target="#key-benefits">Key Benefits</a></li>
-  <li><a href="#core-elements" id="toc-core-elements" class="nav-link" data-scroll-target="#core-elements">Core Elements</a></li>
+  <li><a href="#quarto-components-used" id="toc-quarto-components-used" class="nav-link" data-scroll-target="#quarto-components-used">Quarto Components Used</a></li>
+  <li><a href="#advanced-features-demonstrated" id="toc-advanced-features-demonstrated" class="nav-link" data-scroll-target="#advanced-features-demonstrated">Advanced Features Demonstrated</a></li>
   </ul></li>
-  <li><a href="#explore-the-demonstrations" id="toc-explore-the-demonstrations" class="nav-link" data-scroll-target="#explore-the-demonstrations">Explore the Demonstrations</a>
-  <ul class="collapse">
-  <li><a href="#base-demo" id="toc-base-demo" class="nav-link" data-scroll-target="#base-demo">📄 Base Demo</a></li>
-  <li><a href="#fancy-demo" id="toc-fancy-demo" class="nav-link" data-scroll-target="#fancy-demo">✨ Fancy Demo</a></li>
-  </ul></li>
-  <li><a href="#real-world-application" id="toc-real-world-application" class="nav-link" data-scroll-target="#real-world-application">Real-World Application</a></li>
-  <li><a href="#get-started" id="toc-get-started" class="nav-link" data-scroll-target="#get-started">Get Started</a></li>
   </ul>
 </nav>
     </div>
@@ -144,27 +135,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Why Use Quarto for Data Analysis?</h1>
-<p class="subtitle lead">A Practical Demonstration with Medicare Data</p>
+<h1 class="title">About This Project</h1>
+<p class="subtitle lead">Methodology and Technical Details</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Aaron Chafetz </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 23, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,64 +153,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>This website demonstrates the power and flexibility of <strong>Quarto</strong> for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from <a href="https://data.cms.gov">Data.CMS.gov</a>, you’ll see how Quarto transforms your analytical process.</p>
+<section id="project-purpose" class="level2">
+<h2 class="anchored" data-anchor-id="project-purpose">Project Purpose</h2>
+<p>This website serves as a practical demonstration of <strong>Quarto’s capabilities</strong> for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.</p>
+<p>By comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality.</p>
 </section>
-<section id="what-is-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
-<blockquote class="blockquote">
-<p>“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”<br>
-— Wickham, Çetinkaya-Rundel, and Grolemund</p>
-</blockquote>
-<p>Quarto allows you to author documents using: - <strong>Jupyter notebooks</strong> for interactive development - <strong>Plaintext markdown</strong> in your favorite editor (RStudio, VS Code, etc.)</p>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p>All analyses use <strong>Medicare monthly enrollment data</strong> from <a href="https://data.cms.gov">Data.CMS.gov</a>, the official open data portal for the Centers for Medicare &amp; Medicaid Services.</p>
+<p>This real-world dataset demonstrates how Quarto handles: - Large government datasets - Time-series analysis - Geographic variations - Reproducible reporting requirements common in healthcare analytics</p>
 </section>
-<section id="why-quarto-matters-for-your-analytics" class="level2">
-<h2 class="anchored" data-anchor-id="why-quarto-matters-for-your-analytics">Why Quarto Matters for Your Analytics</h2>
-<section id="key-benefits" class="level3">
-<h3 class="anchored" data-anchor-id="key-benefits">Key Benefits</h3>
-<ul>
-<li><strong>📊 Reproducible</strong>: Your analysis, code, and results are all in one place, ensuring anyone can recreate your work</li>
-<li><strong>🤖 Automatable</strong>: Generate reports programmatically for multiple scenarios or time periods</li>
-<li><strong>⚡ Dynamic</strong>: Update your data and automatically refresh all visualizations and statistics</li>
-<li><strong>🌐 Open Source</strong>: Free, community-driven, and continuously improving</li>
-</ul>
+<section id="technical-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h2>
+<section id="quarto-components-used" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-components-used">Quarto Components Used</h3>
+<section id="yaml-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="yaml-configuration">1. YAML Configuration</h4>
+<p>The YAML header controls document behavior and appearance: - <strong>Dynamic date</strong>: Automatically updates to the render date - <strong>Dynamic subtitle</strong>: Can pull from parameters or calculations - <strong>Code rendering defaults</strong>: Control whether code is shown or hidden by default - <strong>Output formats</strong>: HTML, PDF, Word, presentations, and more</p>
 </section>
-<section id="core-elements" class="level3">
-<h3 class="anchored" data-anchor-id="core-elements">Core Elements</h3>
-<p>Quarto documents combine three powerful components:</p>
-<ol type="1">
-<li><strong>YAML Header</strong> (+ optional CSS): Controls document formatting, output options, and parameters</li>
-<li><strong>Code Chunks</strong>: Execute code in R, Python, Julia, or Observable to generate results</li>
-<li><strong>Markdown Text</strong>: Write narrative prose and include inline code for seamless integration</li>
-</ol>
-<p>Together, these elements create <strong>presentation-ready visualizations and reports</strong> with minimal effort.</p>
+<section id="code-chunks" class="level4">
+<h4 class="anchored" data-anchor-id="code-chunks">2. Code Chunks</h4>
+<p>Analyses are written in <strong>R</strong> (though Quarto supports Python, Julia, and Observable): - Execute data processing and visualization - Generate tables and statistics - Create interactive elements</p>
+</section>
+<section id="markdown-and-inline-code" class="level4">
+<h4 class="anchored" data-anchor-id="markdown-and-inline-code">3. Markdown and Inline Code</h4>
+<p>Narrative text integrates seamlessly with code results: - Explain methodology and findings - Include inline calculations (e.g., “The enrollment increased by <code>r growth_rate</code>%”) - Format professional reports</p>
 </section>
 </section>
-<section id="explore-the-demonstrations" class="level2">
-<h2 class="anchored" data-anchor-id="explore-the-demonstrations">Explore the Demonstrations</h2>
-<p>I’ve created two versions of the same Medicare enrollment analysis to showcase Quarto’s flexibility:</p>
-<section id="base-demo" class="level3">
-<h3 class="anchored" data-anchor-id="base-demo"><a href="demo_base.html">📄 Base Demo</a></h3>
-<p>A standard Quarto rendered document showing the fundamental capabilities: - Clean, professional output - Integrated code and results - Basic formatting</p>
-</section>
-<section id="fancy-demo" class="level3">
-<h3 class="anchored" data-anchor-id="fancy-demo"><a href="demo_fancy.html">✨ Fancy Demo</a></h3>
-<p>An enhanced version demonstrating advanced features: - <strong>Dynamic metadata</strong>: Auto-updating date and subtitle - <strong>Code folding</strong>: Readers can toggle code visibility via a link - <strong>Table of Contents</strong>: Easy navigation through sections - <strong>Custom CSS styling</strong>: Professional branding from an external stylesheet - <strong>Parameterized reporting</strong>: Uses <code>params</code> in YAML for reusable templates (e.g., generate reports for all 50 states automatically)</p>
-</section>
-</section>
-<section id="real-world-application" class="level2">
-<h2 class="anchored" data-anchor-id="real-world-application">Real-World Application</h2>
-<p>The analysis uses <strong>Medicare monthly enrollment data</strong> from Data.CMS.gov, demonstrating how Quarto handles real government data in a reproducible, shareable format.</p>
-</section>
-<section id="get-started" class="level2">
-<h2 class="anchored" data-anchor-id="get-started">Get Started</h2>
-<p>Ready to learn more about implementing Quarto in your workflow? Visit the <a href="about.html">About page</a> to understand the methodology and technical details behind these demonstrations.</p>
-<hr>
-<p><em>All data sourced from <a href="https://data.cms.gov">Data.CMS.gov</a></em></p>
-<p><em>Disclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own.</em></p>
+<section id="advanced-features-demonstrated" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-features-demonstrated">Advanced Features Demonstrated</h3>
+<section id="code-folding" class="level4">
+<h4 class="anchored" data-anchor-id="code-folding">Code Folding</h4>
+<p>In the fancy demo, code is hidden by default but accessible via a “Show code” link in the upper right corner. This keeps the document clean for non-technical readers while maintaining full transparency.</p>
+<p><strong>Implementation:</strong> ```yaml format: html: code-fold: true</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
