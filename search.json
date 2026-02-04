@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "demo_base.html",
+    "href": "demo_base.html",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "",
+    "text": "Base version\n\n\n\nLet’s start at square 1. Nothing fancy here. Basic yaml, use of markdown, code chunks, and inline code."
+  },
+  {
+    "objectID": "demo_base.html#initial-munge",
+    "href": "demo_base.html#initial-munge",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Initial Munge",
+    "text": "Initial Munge\nFrom here we will be doing X, Y, and Z to subset the dataset needed to calculate growth rate.\n\n#subset dataset\ndf_lim &lt;- df |&gt; \n    rename(\n        state = bene_state_desc,\n        state_abbr = bene_state_abrvtn,\n        county = bene_county_desc,\n        county_fips = bene_fips_cd\n        ) |&gt; \n    filter(\n        state == {focus_state},\n        month == \"Year\",\n        bene_geo_lvl == \"County\",\n        year %in% c(2020, 2024)\n        )\n\n\n# #conver to date\n# df_lim &lt;- df_lim |&gt; \n#     mutate(date = str_glue(\"{year} {month}\") |&gt; ym()) \n    \n#limit to cols of interest\ndf_lim &lt;- df_lim |&gt; \n    select(year, state, state_abbr, county, county_fips, tot_benes)"
+  },
+  {
+    "objectID": "demo_base.html#access-spatial-data",
+    "href": "demo_base.html#access-spatial-data",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Access Spatial Data",
+    "text": "Access Spatial Data\nWe need to pull in the spatial data to create a map, leveraging the tigris package.\n\n# Download county boundaries for your state\nstate_counties &lt;- counties(state = unique(df_lim$state_abbr), cb = TRUE, year = max(df_lim$year))\n\n# Convert to sf object if needed\nstate_counties_sf &lt;- st_as_sf(state_counties)\n\n# Ensure FIPS codes match data format\nstate_counties_sf &lt;- state_counties_sf %&gt;%\n  mutate(county_fips = GEOID)"
+  },
+  {
+    "objectID": "demo_base.html#calculate-growth-rate",
+    "href": "demo_base.html#calculate-growth-rate",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Calculate Growth Rate",
+    "text": "Calculate Growth Rate\nHere we will create the growth rate.\n\n#reshape\ndf_gr &lt;- df_lim |&gt; \n    mutate(pd = ifelse(year == max(year), \"end\", \"start\")) |&gt; \n    select(-year) |&gt; \n    pivot_wider(\n        names_from = pd,\n        values_from = tot_benes)\n\ndf_gr &lt;- df_gr |&gt; \n    mutate(\n        gr_pct = (end - start) / start,\n        gr_abs = end - start)"
+  },
+  {
+    "objectID": "demo_base.html#join-data",
+    "href": "demo_base.html#join-data",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Join Data",
+    "text": "Join Data\nNext up its time to join the data.\n\ndf_viz &lt;- state_counties_sf %&gt;%\n  left_join(df_gr, by = \"county_fips\")"
+  },
+  {
+    "objectID": "demo_base.html#top-counties",
+    "href": "demo_base.html#top-counties",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Top Counties",
+    "text": "Top Counties\nHere are the top 5 counties and their growth rates\n\ndf_gr |&gt; \n    slice_max(order_by = gr_pct, n = 5) |&gt; \n    select(county, start, end, gr_pct) |&gt; \n    gt() |&gt;  \n    fmt_number(\n        columns = c(start, end),\n        decimals = 0\n    ) |&gt; \n    fmt_percent(\n        columns = gr_pct,\n        decimals = 1 \n            ) |&gt; \n    cols_label(\n        county = \"County\",\n        start = 2020,\n        end = 2024,\n        gr_pct = \"Growth Rate\"\n    ) \n\n\n\n\n\n\n\nCounty\n2020\n2024\nGrowth Rate\n\n\n\n\nPike County\n14,565\n16,534\n13.5%\n\n\nButler County\n43,738\n49,092\n12.2%\n\n\nSullivan County\n1,879\n2,107\n12.1%\n\n\nChester County\n97,478\n109,107\n11.9%\n\n\nNorthampton County\n69,606\n76,986\n10.6%"
+  },
+  {
+    "objectID": "demo_base.html#state-map",
+    "href": "demo_base.html#state-map",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "State Map",
+    "text": "State Map\nAnd here is a map of the state\n\ndf_viz |&gt; \n    ggplot() +\n    geom_sf(aes(fill = gr_pct), color = \"white\", size = 0.2) +\n    geom_sf_text(\n        data = df_viz |&gt; slice_max(order_by = gr_pct, n = 5),\n        aes(label = county), na.rm = TRUE,\n        ) +\n    scale_fill_gradient2(\n        low = \"#af8dc3\",\n        mid = \"#f7f7f7\",\n        high = \"#7fbf7b\",\n        midpoint = 0,\n        name = \"Growth (%)\",\n        labels = percent_format(scale = 1)\n    ) +\n    labs(\n        x = NULL, y = NULL,\n        title = \"Medicare Beneficiary Growth by County\",\n        subtitle = str_glue(\"{focus_state} | Percent change in total enrollment (2020-2024)\"),\n        caption = \"Source: Medicare Monthly Enrollment Data, Data.CMS.gov\"\n    ) +\n    theme_minimal() +\n    theme(\n        plot.title = element_text(face = \"bold\", size = 16),\n        legend.position = \"top\",\n        axis.text = element_blank(),\n        axis.ticks = element_blank(),\n        panel.grid = element_blank()\n    )\n\nWarning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not\ngive correct results for longitude/latitude data"
+  },
+  {
+    "objectID": "demo_fancy.html",
+    "href": "demo_fancy.html",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "",
+    "text": "Souped up version!\n\n\n\nThe differences here from the base version are that:\n\nadditional yaml matter (e.g. dynamic date, dynamic subtitle, default turning off code rendering)\ncode can now be viewed by the reader by clicking a link in the upper right hand corner\nTable of Contents added for easier navigation\ncustom css formatting applied from an external css file in the repo\nparams added to yaml that allow us to use those repeated parameters throughout the report and allows us to use this as parameterized report template, i.e. we can render this report for every state"
+  },
+  {
+    "objectID": "demo_fancy.html#initial-munge",
+    "href": "demo_fancy.html#initial-munge",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Initial Munge",
+    "text": "Initial Munge\nFrom here we will be doing the initial munge of the data. We do the following munging steps:\n\nrename columns for ease of use\nfilter down the data to the particular state and focal years\nlimit the columns to just what are needed"
+  },
+  {
+    "objectID": "demo_fancy.html#access-spatial-data",
+    "href": "demo_fancy.html#access-spatial-data",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Access Spatial Data",
+    "text": "Access Spatial Data\nWe need to pull in the spatial data to create a map, leveraging the tigris package. We’ll import the the shapefiles from this package and join it to the data in a later step."
+  },
+  {
+    "objectID": "demo_fancy.html#calculate-growth-rate",
+    "href": "demo_fancy.html#calculate-growth-rate",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Calculate Growth Rate",
+    "text": "Calculate Growth Rate\nHere we will create the growth rate. We pivot the data and calculate the growth rate for each county.\n\n\n\n\n\n\nImportant\n\n\n\n\n\ngrowth rate = (end value / start value) - 1"
+  },
+  {
+    "objectID": "demo_fancy.html#join-data",
+    "href": "demo_fancy.html#join-data",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Join Data",
+    "text": "Join Data\nNext up its time to join the data. We have the Medicare data and we need to join it with the shapefile so we can map it. We can join the dataset using the fips code.\n\n\n\n\n\n\nTip\n\n\n\nWe can show important code even if most are not shown by default, using echo: true in this code chunk.\n\n\n\ndf_viz &lt;- left_join(state_counties_sf, df_gr, by = \"county_fips\")"
+  },
+  {
+    "objectID": "demo_fancy.html#top-counties",
+    "href": "demo_fancy.html#top-counties",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "Top Counties",
+    "text": "Top Counties\nHere is a table (Table 1) with the top 5 counties and their growth rates.\n\n\n\n\nTable 1: Counties with the largest growth rates\n\n\n\n\n\n\n\n\n\nCounty\n2020\n2024\nGrowth Rate\n\n\n\n\nPike County\n14,565\n16,534\n13.5%\n\n\nButler County\n43,738\n49,092\n12.2%\n\n\nSullivan County\n1,879\n2,107\n12.1%\n\n\nChester County\n97,478\n109,107\n11.9%\n\n\nNorthampton County\n69,606\n76,986\n10.6%"
+  },
+  {
+    "objectID": "demo_fancy.html#state-map",
+    "href": "demo_fancy.html#state-map",
+    "title": "Quarto Demo for DSAC/Eng CoP",
+    "section": "State Map",
+    "text": "State Map\nAnd below you can see in Figure 1 here is a map of the state…\n\n\n\n\n\n\n\n\nFigure 1: County Growth Rates"
+  }
+]
