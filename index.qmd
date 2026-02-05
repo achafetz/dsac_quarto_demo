@@ -6,7 +6,8 @@ date: 2026-01-23
 format:
   html:
     toc: true
-    theme: cosmos
+    theme: cosmo
+    css: dsac-theme.css
     code-fold: false
 ---
 
@@ -17,11 +18,12 @@ This website demonstrates the power and flexibility of **Quarto** for data scien
 ## What is Quarto?
 
 > "Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more."  
-> — Wickham, Çetinkaya-Rundel, and Grolemund
+> — Wickham, Çetinkaya-Rundel, and Grolemund, R for Data Science (2e)
 
 Quarto allows you to author documents using:
+
 - **Jupyter notebooks** for interactive development
-- **Plaintext markdown** in your favorite editor (RStudio, VS Code, etc.)
+- **Plaintext markdown** in your favorite editor (VS Code, Jupyter, RStudio,  etc.)
 
 ## Why Quarto Matters for Your Analytics
 
@@ -43,22 +45,25 @@ Quarto documents combine three powerful components:
 Together, these elements create **presentation-ready visualizations and reports** with minimal effort.
 
 ## Explore the Demonstrations
-
 I've created two versions of the same Medicare enrollment analysis to showcase Quarto's flexibility:
 
 ### [📄 Base Demo](demo_base.html)
+
 A standard Quarto rendered document showing the fundamental capabilities:
-- Clean, professional output
-- Integrated code and results
-- Basic formatting
+
+-   Clean, professional output
+-   Integrated code and results
+-   Basic formatting
 
 ### [✨ Fancy Demo](demo_fancy.html)
+
 An enhanced version demonstrating advanced features:
-- **Dynamic metadata**: Auto-updating date and subtitle
-- **Code folding**: Readers can toggle code visibility via a link
-- **Table of Contents**: Easy navigation through sections
-- **Custom CSS styling**: Professional branding from an external stylesheet
-- **Parameterized reporting**: Uses `params` in YAML for reusable templates (e.g., generate reports for all 50 states automatically)
+
+-   **Dynamic metadata**: Auto-updating date and subtitle
+-   **Code folding**: Readers can toggle code visibility via a link
+-   **Table of Contents**: Easy navigation through sections
+-   **Custom CSS styling**: Professional branding from an external stylesheet
+-   **Parameterized reporting**: Uses `params` in YAML for reusable templates (e.g., generate reports for all 50 states automatically)
 
 ## Real-World Application
 
@@ -70,6 +75,6 @@ Ready to learn more about implementing Quarto in your workflow? Visit the [About
 
 ---
 
-*All data sourced from [Data.CMS.gov](https://data.cms.gov)*
+*All data are public and sourced from [Data.CMS.gov](https://data.cms.gov)*
 
 *Disclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own.*

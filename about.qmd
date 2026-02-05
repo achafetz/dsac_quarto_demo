@@ -4,8 +4,9 @@ subtitle: "Methodology and Technical Details"
 author: "Aaron Chafetz | Digital Service at CMS"
 format:
   html:
+    theme: cosmo
+    css: dsac-theme.css
     toc: true
-    theme: cosmos
 ---
 
 ## Project Purpose

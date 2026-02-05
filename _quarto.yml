@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: presentation.qmd
+      - href: slides.html
         text: Slides
       - href: demo_base.html
         text: Base Demo
@@ -19,5 +19,6 @@ website:
 
 format:
   html:
-    theme: cosmo
+    #theme: cosmo 
+    #css: dsac-theme.css 
     toc: true

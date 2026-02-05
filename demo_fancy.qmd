@@ -9,6 +9,7 @@ execute:
 format: 
     html:
         toc: true
+        theme: cosmo
         css: dsac-theme.css
         code-tools: true
         code_fold: true
