@@ -3,10 +3,14 @@ title: "Leveraging Quarto"
 format:
   revealjs:
     css: presentation-styles.css
+    title-slide-attributes:
+      data-background-image: images/DSAC-Logo-stacked-fullcolor.png
+      data-background-size: 20%
+      data-background-position: top center
     transition: slide
     slide-number: true
     logo: "images/DSAC-Logo-shield-fullcolor-OUTLINED.png"
-    footer: "Digital Service at CMS"
+    footer: "Digital Service at CMS<br>[← Back to Home](index.html)"
 ---
 
 ## Leveraging Quarto
@@ -17,9 +21,11 @@ format:
 :::
 
 ::: {.column width="40%"}
-> "Quarto provides a unified authoring framework for data science, **combining your code, its results, and your prose**. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more."
->
-> — * Wickham, Çetinkaya-Rundel, and Grolemund*
+<blockquote style="font-size: 0.8em;">
+"Quarto provides a unified authoring framework for data science, **combining your code, its results, and your prose**. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more."
+
+ —  Wickham, Çetinkaya-Rundel, and Grolemund
+</blockquote>
 :::
 :::
 
@@ -80,9 +86,20 @@ format:
 
 ---
 
-## Quarto Demo on GitHub
+## Quarto Demo on GitHub + GH Pages
 
+::: {.columns}
+::: {.column width="60%"}
+ - Base Demo Version [Script](demo_base.qmd)/[Rendered Page](demo_base.html)
+ - Fancy Demo Version [Script](demo_fancy.qmd)/[Rendered Page](demo_fancy.html)
+ - Slides [Script](slides.qmd)
+:::
+
+::: {.column width="30%"}
 ![](images/GitHub_Invertocat_Black.png)
+:::
+:::
+
 
 ---
 
