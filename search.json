@@ -67,7 +67,7 @@
     "href": "index.html#what-is-quarto",
     "title": "Why Use Quarto for Data Analysis?",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— Wickham, Çetinkaya-Rundel, and Grolemund, R for Data Science (2e)\n\nQuarto allows you to author documents using: - Jupyter notebooks for interactive development - Plaintext markdown in your favorite editor (VS Code, Jupyter, RStudio, etc.)"
+    "text": "What is Quarto?\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— Wickham, Çetinkaya-Rundel, and Grolemund, R for Data Science (2e)\n\nQuarto allows you to author documents using:\n\nJupyter notebooks for interactive development\nPlaintext markdown in your favorite editor (VS Code, Jupyter, RStudio, etc.)"
   },
   {
     "objectID": "index.html#why-quarto-matters-for-your-analytics",
