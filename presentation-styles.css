@@ -28,6 +28,19 @@
   color: #ffffff !important;
 }
 
+/* Add logo to top center of title slide */
+.reveal .slides section.title-slide::before {
+  content: "";
+  display: block;
+  width: 200px;  /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  margin: 0 auto 2rem auto;  /* Centers horizontally, adds space below */
+  background-image: url('images/DSAC-Logo-stacked-fullcolor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Apply your DSAC color scheme to slide headings */
 .reveal h1 {
   font-family: 'Source Sans 3', sans-serif;
@@ -71,8 +84,43 @@
 
 .reveal .slide-footnote {
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.6em;
+  font-size: 0.2em;
   text-align: left;
-  color: #666666 !important;
+  color: #909090 !important;
   margin-top: 2rem;
+}
+
+/* Smaller text for quote slides */
+.reveal .small-quote {
+  font-size: 0.8em;
+}
+
+/* Home button/logo in presentation */
+.reveal .slide-menu-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.reveal .slide-menu-button a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.reveal .slide-menu-button a:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.reveal .slide-menu-button img {
+  width: 24px;
+  height: 24px;
 }

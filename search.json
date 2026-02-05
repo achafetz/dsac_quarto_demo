@@ -151,7 +151,7 @@
     "href": "slides.html#leveraging-quarto",
     "title": "Leveraging Quarto",
     "section": "Leveraging Quarto",
-    "text": "Leveraging Quarto\n\n\n\n\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— * Wickham, Çetinkaya-Rundel, and Grolemund*"
+    "text": "Leveraging Quarto\n\n\n\n\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— Wickham, Çetinkaya-Rundel, and Grolemund"
   },
   {
     "objectID": "slides.html#why-does-this-matter",
@@ -189,11 +189,11 @@
     "text": "Inline Code + Code Chunks"
   },
   {
-    "objectID": "slides.html#quarto-demo-on-github",
-    "href": "slides.html#quarto-demo-on-github",
+    "objectID": "slides.html#quarto-demo-on-github-gh-pages",
+    "href": "slides.html#quarto-demo-on-github-gh-pages",
     "title": "Leveraging Quarto",
-    "section": "Quarto Demo on GitHub",
-    "text": "Quarto Demo on GitHub"
+    "section": "Quarto Demo on GitHub + GH Pages",
+    "text": "Quarto Demo on GitHub + GH Pages\n\n\n\nBase Demo Version Script/Rendered Page\nFancy Demo Version Script/Rendered Page\nSlides Script"
   },
   {
     "objectID": "about.html",
