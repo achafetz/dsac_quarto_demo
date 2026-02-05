@@ -1,0 +1,78 @@
+/* Import your custom font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+
+/* Apply Source Sans 3 font throughout */
+.reveal {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Title slide customization */
+.reveal .slides section.title-slide {
+  background-color: #123154;
+}
+
+.reveal .slides section.title-slide h1.title {
+  text-align: left;
+  margin-left: 0.9in;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.reveal .slides section.title-slide .subtitle,
+.reveal .slides section.title-slide .author,
+.reveal .slides section.title-slide .date {
+  text-align: left;
+  margin-left: 0.9in;
+  font-family: 'Source Sans 3', sans-serif;
+  color: #ffffff !important;
+}
+
+/* Apply your DSAC color scheme to slide headings */
+.reveal h1 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  color: #136a5d !important;
+}
+
+.reveal h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  color: #103d68 !important;
+}
+
+.reveal h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  color: #136a5d !important;
+}
+
+.reveal p, .reveal li {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  color: #24292e !important;
+}
+
+/* Style blockquotes for quote slides */
+.reveal blockquote {
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: italic;
+  color: #103d68 !important;
+}
+
+/* Footnote styling */
+.reveal .footnote,
+.reveal .footer {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.6em;
+  text-align: left;
+  color: #666666 !important;
+}
+
+.reveal .slide-footnote {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.6em;
+  text-align: left;
+  color: #666666 !important;
+  margin-top: 2rem;
+}

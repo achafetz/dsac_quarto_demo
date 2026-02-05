@@ -147,6 +147,55 @@
     "text": "State Map\nAnd below you can see in Figure 1 here is a map of the state…\n\n\n\n\n\n\n\n\nFigure 1: County Growth Rates"
   },
   {
+    "objectID": "slides.html#leveraging-quarto",
+    "href": "slides.html#leveraging-quarto",
+    "title": "Leveraging Quarto",
+    "section": "Leveraging Quarto",
+    "text": "Leveraging Quarto\n\n\n\n\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— * Wickham, Çetinkaya-Rundel, and Grolemund*"
+  },
+  {
+    "objectID": "slides.html#why-does-this-matter",
+    "href": "slides.html#why-does-this-matter",
+    "title": "Leveraging Quarto",
+    "section": "Why does this matter?",
+    "text": "Why does this matter?\n\nReproducible\nAutomatable\nDynamic\nOpen Source (and language agnostic)"
+  },
+  {
+    "objectID": "slides.html#easy-to-go-from-analysisreport-to-polished-product",
+    "href": "slides.html#easy-to-go-from-analysisreport-to-polished-product",
+    "title": "Leveraging Quarto",
+    "section": "Easy to go from analysis/report to polished product",
+    "text": "Easy to go from analysis/report to polished product"
+  },
+  {
+    "objectID": "slides.html#yaml-markdown",
+    "href": "slides.html#yaml-markdown",
+    "title": "Leveraging Quarto",
+    "section": "YAML + Markdown",
+    "text": "YAML + Markdown"
+  },
+  {
+    "objectID": "slides.html#jazz-it-up-with-css",
+    "href": "slides.html#jazz-it-up-with-css",
+    "title": "Leveraging Quarto",
+    "section": "Jazz it up with CSS",
+    "text": "Jazz it up with CSS"
+  },
+  {
+    "objectID": "slides.html#inline-code-code-chunks",
+    "href": "slides.html#inline-code-code-chunks",
+    "title": "Leveraging Quarto",
+    "section": "Inline Code + Code Chunks",
+    "text": "Inline Code + Code Chunks"
+  },
+  {
+    "objectID": "slides.html#quarto-demo-on-github",
+    "href": "slides.html#quarto-demo-on-github",
+    "title": "Leveraging Quarto",
+    "section": "Quarto Demo on GitHub",
+    "text": "Quarto Demo on GitHub"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About This Project",
