@@ -1,0 +1,1027 @@
+BENE_STATE_DESC,BENE_STATE_ABRVTN,BENE_COUNTY_DESC,BENE_FIPS_CD,BENE_GEO_LVL,YEAR,MONTH,TOT_BENES
+Pennsylvania,PA,Adams County,42001,County,2020,Year,25059
+Pennsylvania,PA,Allegheny County,42003,County,2020,Year,267287
+Pennsylvania,PA,Armstrong County,42005,County,2020,Year,17427
+Pennsylvania,PA,Beaver County,42007,County,2020,Year,42710
+Pennsylvania,PA,Bedford County,42009,County,2020,Year,13049
+Pennsylvania,PA,Berks County,42011,County,2020,Year,86294
+Pennsylvania,PA,Blair County,42013,County,2020,Year,31540
+Pennsylvania,PA,Bradford County,42015,County,2020,Year,15126
+Pennsylvania,PA,Bucks County,42017,County,2020,Year,139676
+Pennsylvania,PA,Butler County,42019,County,2020,Year,43738
+Pennsylvania,PA,Cambria County,42021,County,2020,Year,36764
+Pennsylvania,PA,Cameron County,42023,County,2020,Year,1472
+Pennsylvania,PA,Carbon County,42025,County,2020,Year,16480
+Pennsylvania,PA,Centre County,42027,County,2020,Year,25129
+Pennsylvania,PA,Chester County,42029,County,2020,Year,97478
+Pennsylvania,PA,Clarion County,42031,County,2020,Year,9442
+Pennsylvania,PA,Clearfield County,42033,County,2020,Year,20016
+Pennsylvania,PA,Clinton County,42035,County,2020,Year,8814
+Pennsylvania,PA,Columbia County,42037,County,2020,Year,15040
+Pennsylvania,PA,Crawford County,42039,County,2020,Year,21662
+Pennsylvania,PA,Cumberland County,42041,County,2020,Year,54433
+Pennsylvania,PA,Dauphin County,42043,County,2020,Year,57482
+Pennsylvania,PA,Delaware County,42045,County,2020,Year,109313
+Pennsylvania,PA,Elk County,42047,County,2020,Year,8247
+Pennsylvania,PA,Erie County,42049,County,2020,Year,60657
+Pennsylvania,PA,Fayette County,42051,County,2020,Year,34567
+Pennsylvania,PA,Forest County,42053,County,2020,Year,1755
+Pennsylvania,PA,Franklin County,42055,County,2020,Year,36427
+Pennsylvania,PA,Fulton County,42057,County,2020,Year,3744
+Pennsylvania,PA,Greene County,42059,County,2020,Year,8651
+Pennsylvania,PA,Huntingdon County,42061,County,2020,Year,10805
+Pennsylvania,PA,Indiana County,42063,County,2020,Year,19581
+Pennsylvania,PA,Jefferson County,42065,County,2020,Year,11276
+Pennsylvania,PA,Juniata County,42067,County,2020,Year,5575
+Pennsylvania,PA,Lackawanna County,42069,County,2020,Year,52140
+Pennsylvania,PA,Lancaster County,42071,County,2020,Year,113363
+Pennsylvania,PA,Lawrence County,42073,County,2020,Year,22781
+Pennsylvania,PA,Lebanon County,42075,County,2020,Year,32441
+Pennsylvania,PA,Lehigh County,42077,County,2020,Year,75280
+Pennsylvania,PA,Luzerne County,42079,County,2020,Year,74650
+Pennsylvania,PA,Lycoming County,42081,County,2020,Year,27236
+Pennsylvania,PA,Mckean County,42083,County,2020,Year,10265
+Pennsylvania,PA,Mercer County,42085,County,2020,Year,29107
+Pennsylvania,PA,Mifflin County,42087,County,2020,Year,11472
+Pennsylvania,PA,Monroe County,42089,County,2020,Year,34789
+Pennsylvania,PA,Montgomery County,42091,County,2020,Year,167446
+Pennsylvania,PA,Montour County,42093,County,2020,Year,4395
+Pennsylvania,PA,Northampton County,42095,County,2020,Year,69606
+Pennsylvania,PA,Northumberland County,42097,County,2020,Year,23280
+Pennsylvania,PA,Perry County,42099,County,2020,Year,10471
+Pennsylvania,PA,Philadelphia County,42101,County,2020,Year,258806
+Pennsylvania,PA,Pike County,42103,County,2020,Year,14565
+Pennsylvania,PA,Potter County,42105,County,2020,Year,4695
+Pennsylvania,PA,Schuylkill County,42107,County,2020,Year,35769
+Pennsylvania,PA,Snyder County,42109,County,2020,Year,8666
+Pennsylvania,PA,Somerset County,42111,County,2020,Year,19644
+Pennsylvania,PA,Sullivan County,42113,County,2020,Year,1879
+Pennsylvania,PA,Susquehanna County,42115,County,2020,Year,10383
+Pennsylvania,PA,Tioga County,42117,County,2020,Year,10792
+Pennsylvania,PA,Union County,42119,County,2020,Year,8478
+Pennsylvania,PA,Venango County,42121,County,2020,Year,14593
+Pennsylvania,PA,Warren County,42123,County,2020,Year,10669
+Pennsylvania,PA,Washington County,42125,County,2020,Year,50986
+Pennsylvania,PA,Wayne County,42127,County,2020,Year,14131
+Pennsylvania,PA,Westmoreland County,42129,County,2020,Year,94552
+Pennsylvania,PA,Wyoming County,42131,County,2020,Year,6860
+Pennsylvania,PA,York County,42133,County,2020,Year,95153
+Pennsylvania,PA,Unknown,42999,County,2020,Year,*
+Pennsylvania,PA,Adams County,42001,County,2024,Year,27622
+Pennsylvania,PA,Allegheny County,42003,County,2024,Year,278674
+Pennsylvania,PA,Armstrong County,42005,County,2024,Year,18134
+Pennsylvania,PA,Beaver County,42007,County,2024,Year,44519
+Pennsylvania,PA,Bedford County,42009,County,2024,Year,13688
+Pennsylvania,PA,Berks County,42011,County,2024,Year,91851
+Pennsylvania,PA,Blair County,42013,County,2024,Year,32755
+Pennsylvania,PA,Bradford County,42015,County,2024,Year,15790
+Pennsylvania,PA,Bucks County,42017,County,2024,Year,152615
+Pennsylvania,PA,Butler County,42019,County,2024,Year,49092
+Pennsylvania,PA,Cambria County,42021,County,2024,Year,38073
+Pennsylvania,PA,Cameron County,42023,County,2024,Year,1492
+Pennsylvania,PA,Carbon County,42025,County,2024,Year,17695
+Pennsylvania,PA,Centre County,42027,County,2024,Year,27378
+Pennsylvania,PA,Chester County,42029,County,2024,Year,109107
+Pennsylvania,PA,Clarion County,42031,County,2024,Year,9736
+Pennsylvania,PA,Clearfield County,42033,County,2024,Year,20606
+Pennsylvania,PA,Clinton County,42035,County,2024,Year,9170
+Pennsylvania,PA,Columbia County,42037,County,2024,Year,16204
+Pennsylvania,PA,Crawford County,42039,County,2024,Year,22658
+Pennsylvania,PA,Cumberland County,42041,County,2024,Year,59984
+Pennsylvania,PA,Dauphin County,42043,County,2024,Year,61572
+Pennsylvania,PA,Delaware County,42045,County,2024,Year,118639
+Pennsylvania,PA,Elk County,42047,County,2024,Year,8716
+Pennsylvania,PA,Erie County,42049,County,2024,Year,64715
+Pennsylvania,PA,Fayette County,42051,County,2024,Year,35988
+Pennsylvania,PA,Forest County,42053,County,2024,Year,1879
+Pennsylvania,PA,Franklin County,42055,County,2024,Year,37818
+Pennsylvania,PA,Fulton County,42057,County,2024,Year,3937
+Pennsylvania,PA,Greene County,42059,County,2024,Year,8892
+Pennsylvania,PA,Huntingdon County,42061,County,2024,Year,11281
+Pennsylvania,PA,Indiana County,42063,County,2024,Year,20770
+Pennsylvania,PA,Jefferson County,42065,County,2024,Year,11928
+Pennsylvania,PA,Juniata County,42067,County,2024,Year,5682
+Pennsylvania,PA,Lackawanna County,42069,County,2024,Year,54548
+Pennsylvania,PA,Lancaster County,42071,County,2024,Year,122635
+Pennsylvania,PA,Lawrence County,42073,County,2024,Year,24036
+Pennsylvania,PA,Lebanon County,42075,County,2024,Year,34609
+Pennsylvania,PA,Lehigh County,42077,County,2024,Year,79529
+Pennsylvania,PA,Luzerne County,42079,County,2024,Year,76701
+Pennsylvania,PA,Lycoming County,42081,County,2024,Year,28922
+Pennsylvania,PA,Mckean County,42083,County,2024,Year,10569
+Pennsylvania,PA,Mercer County,42085,County,2024,Year,30042
+Pennsylvania,PA,Mifflin County,42087,County,2024,Year,11702
+Pennsylvania,PA,Monroe County,42089,County,2024,Year,37996
+Pennsylvania,PA,Montgomery County,42091,County,2024,Year,184223
+Pennsylvania,PA,Montour County,42093,County,2024,Year,4726
+Pennsylvania,PA,Northampton County,42095,County,2024,Year,76986
+Pennsylvania,PA,Northumberland County,42097,County,2024,Year,23882
+Pennsylvania,PA,Perry County,42099,County,2024,Year,11487
+Pennsylvania,PA,Philadelphia County,42101,County,2024,Year,262566
+Pennsylvania,PA,Pike County,42103,County,2024,Year,16534
+Pennsylvania,PA,Potter County,42105,County,2024,Year,4892
+Pennsylvania,PA,Schuylkill County,42107,County,2024,Year,36831
+Pennsylvania,PA,Snyder County,42109,County,2024,Year,9117
+Pennsylvania,PA,Somerset County,42111,County,2024,Year,20601
+Pennsylvania,PA,Sullivan County,42113,County,2024,Year,2107
+Pennsylvania,PA,Susquehanna County,42115,County,2024,Year,11063
+Pennsylvania,PA,Tioga County,42117,County,2024,Year,11251
+Pennsylvania,PA,Union County,42119,County,2024,Year,8920
+Pennsylvania,PA,Venango County,42121,County,2024,Year,14925
+Pennsylvania,PA,Warren County,42123,County,2024,Year,10993
+Pennsylvania,PA,Washington County,42125,County,2024,Year,54832
+Pennsylvania,PA,Wayne County,42127,County,2024,Year,14571
+Pennsylvania,PA,Westmoreland County,42129,County,2024,Year,100095
+Pennsylvania,PA,Wyoming County,42131,County,2024,Year,7297
+Pennsylvania,PA,York County,42133,County,2024,Year,103366
+Pennsylvania,PA,Unknown,42999,County,2024,Year,*
+New York,NY,Albany County,36001,County,2020,Year,61781
+New York,NY,Allegany County,36003,County,2020,Year,10530
+New York,NY,Bronx County,36005,County,2020,Year,209569
+New York,NY,Broome County,36007,County,2020,Year,44246
+New York,NY,Cattaraugus County,36009,County,2020,Year,18476
+New York,NY,Cayuga County,36011,County,2020,Year,17106
+New York,NY,Chautauqua County,36013,County,2020,Year,31250
+New York,NY,Chemung County,36015,County,2020,Year,20128
+New York,NY,Chenango County,36017,County,2020,Year,12134
+New York,NY,Clinton County,36019,County,2020,Year,18521
+New York,NY,Columbia County,36021,County,2020,Year,16174
+New York,NY,Cortland County,36023,County,2020,Year,9450
+New York,NY,Delaware County,36025,County,2020,Year,12163
+New York,NY,Dutchess County,36027,County,2020,Year,61163
+New York,NY,Erie County,36029,County,2020,Year,201120
+New York,NY,Essex County,36031,County,2020,Year,9909
+New York,NY,Franklin County,36033,County,2020,Year,11306
+New York,NY,Fulton County,36035,County,2020,Year,13722
+New York,NY,Genesee County,36037,County,2020,Year,13298
+New York,NY,Greene County,36039,County,2020,Year,11964
+New York,NY,Hamilton County,36041,County,2020,Year,1716
+New York,NY,Herkimer County,36043,County,2020,Year,15073
+New York,NY,Jefferson County,36045,County,2020,Year,20415
+New York,NY,Kings County,36047,County,2020,Year,377531
+New York,NY,Lewis County,36049,County,2020,Year,6085
+New York,NY,Livingston County,36051,County,2020,Year,13854
+New York,NY,Madison County,36053,County,2020,Year,14961
+New York,NY,Monroe County,36055,County,2020,Year,160121
+New York,NY,Montgomery County,36057,County,2020,Year,11571
+New York,NY,Nassau County,36059,County,2020,Year,270988
+New York,NY,New York County,36061,County,2020,Year,286755
+New York,NY,Niagara County,36063,County,2020,Year,50490
+New York,NY,Oneida County,36065,County,2020,Year,52727
+New York,NY,Onondaga County,36067,County,2020,Year,96285
+New York,NY,Ontario County,36069,County,2020,Year,26666
+New York,NY,Orange County,36071,County,2020,Year,65074
+New York,NY,Orleans County,36073,County,2020,Year,8970
+New York,NY,Oswego County,36075,County,2020,Year,25367
+New York,NY,Otsego County,36077,County,2020,Year,14366
+New York,NY,Putnam County,36079,County,2020,Year,19477
+New York,NY,Queens County,36081,County,2020,Year,369879
+New York,NY,Rensselaer County,36083,County,2020,Year,32476
+New York,NY,Richmond County,36085,County,2020,Year,90522
+New York,NY,Rockland County,36087,County,2020,Year,57026
+New York,NY,Saratoga County,36091,County,2020,Year,50469
+New York,NY,Schenectady County,36093,County,2020,Year,32037
+New York,NY,Schoharie County,36095,County,2020,Year,7608
+New York,NY,Schuyler County,36097,County,2020,Year,4763
+New York,NY,Seneca County,36099,County,2020,Year,7820
+New York,NY,St. Lawrence County,36089,County,2020,Year,23789
+New York,NY,Steuben County,36101,County,2020,Year,22461
+New York,NY,Suffolk County,36103,County,2020,Year,296456
+New York,NY,Sullivan County,36105,County,2020,Year,17036
+New York,NY,Tioga County,36107,County,2020,Year,11440
+New York,NY,Tompkins County,36109,County,2020,Year,17176
+New York,NY,Ulster County,36111,County,2020,Year,41385
+New York,NY,Warren County,36113,County,2020,Year,17943
+New York,NY,Washington County,36115,County,2020,Year,14657
+New York,NY,Wayne County,36117,County,2020,Year,22073
+New York,NY,Westchester County,36119,County,2020,Year,178174
+New York,NY,Wyoming County,36121,County,2020,Year,8899
+New York,NY,Yates County,36123,County,2020,Year,5901
+New York,NY,Unknown,36999,County,2020,Year,*
+New York,NY,Albany County,36001,County,2024,Year,65323
+New York,NY,Allegany County,36003,County,2024,Year,11139
+New York,NY,Bronx County,36005,County,2024,Year,224397
+New York,NY,Broome County,36007,County,2024,Year,45749
+New York,NY,Cattaraugus County,36009,County,2024,Year,19317
+New York,NY,Cayuga County,36011,County,2024,Year,18127
+New York,NY,Chautauqua County,36013,County,2024,Year,32474
+New York,NY,Chemung County,36015,County,2024,Year,20513
+New York,NY,Chenango County,36017,County,2024,Year,12860
+New York,NY,Clinton County,36019,County,2024,Year,19984
+New York,NY,Columbia County,36021,County,2024,Year,17291
+New York,NY,Cortland County,36023,County,2024,Year,9998
+New York,NY,Delaware County,36025,County,2024,Year,12454
+New York,NY,Dutchess County,36027,County,2024,Year,66116
+New York,NY,Erie County,36029,County,2024,Year,212181
+New York,NY,Essex County,36031,County,2024,Year,10384
+New York,NY,Franklin County,36033,County,2024,Year,12230
+New York,NY,Fulton County,36035,County,2024,Year,14024
+New York,NY,Genesee County,36037,County,2024,Year,14326
+New York,NY,Greene County,36039,County,2024,Year,12555
+New York,NY,Hamilton County,36041,County,2024,Year,1758
+New York,NY,Herkimer County,36043,County,2024,Year,15561
+New York,NY,Jefferson County,36045,County,2024,Year,21957
+New York,NY,Kings County,36047,County,2024,Year,400254
+New York,NY,Lewis County,36049,County,2024,Year,6547
+New York,NY,Livingston County,36051,County,2024,Year,15080
+New York,NY,Madison County,36053,County,2024,Year,16238
+New York,NY,Monroe County,36055,County,2024,Year,170578
+New York,NY,Montgomery County,36057,County,2024,Year,12429
+New York,NY,Nassau County,36059,County,2024,Year,291737
+New York,NY,New York County,36061,County,2024,Year,294395
+New York,NY,Niagara County,36063,County,2024,Year,53612
+New York,NY,Oneida County,36065,County,2024,Year,54697
+New York,NY,Onondaga County,36067,County,2024,Year,102196
+New York,NY,Ontario County,36069,County,2024,Year,29082
+New York,NY,Orange County,36071,County,2024,Year,69805
+New York,NY,Orleans County,36073,County,2024,Year,9821
+New York,NY,Oswego County,36075,County,2024,Year,27550
+New York,NY,Otsego County,36077,County,2024,Year,15272
+New York,NY,Putnam County,36079,County,2024,Year,21501
+New York,NY,Queens County,36081,County,2024,Year,403616
+New York,NY,Rensselaer County,36083,County,2024,Year,34567
+New York,NY,Richmond County,36085,County,2024,Year,96343
+New York,NY,Rockland County,36087,County,2024,Year,58705
+New York,NY,Saratoga County,36091,County,2024,Year,55864
+New York,NY,Schenectady County,36093,County,2024,Year,34506
+New York,NY,Schoharie County,36095,County,2024,Year,8154
+New York,NY,Schuyler County,36097,County,2024,Year,5014
+New York,NY,Seneca County,36099,County,2024,Year,8280
+New York,NY,St. Lawrence County,36089,County,2024,Year,24791
+New York,NY,Steuben County,36101,County,2024,Year,23489
+New York,NY,Suffolk County,36103,County,2024,Year,320251
+New York,NY,Sullivan County,36105,County,2024,Year,17918
+New York,NY,Tioga County,36107,County,2024,Year,12302
+New York,NY,Tompkins County,36109,County,2024,Year,18538
+New York,NY,Ulster County,36111,County,2024,Year,44138
+New York,NY,Warren County,36113,County,2024,Year,19432
+New York,NY,Washington County,36115,County,2024,Year,15807
+New York,NY,Wayne County,36117,County,2024,Year,23905
+New York,NY,Westchester County,36119,County,2024,Year,191847
+New York,NY,Wyoming County,36121,County,2024,Year,9539
+New York,NY,Yates County,36123,County,2024,Year,6270
+New York,NY,Unknown,36999,County,2024,Year,*
+California,CA,Alameda County,06001,County,2020,Year,247909
+California,CA,Alpine County,06003,County,2020,Year,265
+California,CA,Amador County,06005,County,2020,Year,11758
+California,CA,Butte County,06007,County,2020,Year,45906
+California,CA,Calaveras County,06009,County,2020,Year,13387
+California,CA,Colusa County,06011,County,2020,Year,3794
+California,CA,Contra Costa County,06013,County,2020,Year,202615
+California,CA,Del Norte County,06015,County,2020,Year,6365
+California,CA,El Dorado County,06017,County,2020,Year,45874
+California,CA,Fresno County,06019,County,2020,Year,145927
+California,CA,Glenn County,06021,County,2020,Year,5759
+California,CA,Humboldt County,06023,County,2020,Year,29518
+California,CA,Imperial County,06025,County,2020,Year,32268
+California,CA,Inyo County,06027,County,2020,Year,4550
+California,CA,Kern County,06029,County,2020,Year,121003
+California,CA,Kings County,06031,County,2020,Year,17934
+California,CA,Lake County,06033,County,2020,Year,17325
+California,CA,Lassen County,06035,County,2020,Year,5243
+California,CA,Los Angeles County,06037,County,2020,Year,1525009
+California,CA,Madera County,06039,County,2020,Year,24931
+California,CA,Marin County,06041,County,2020,Year,59670
+California,CA,Mariposa County,06043,County,2020,Year,4947
+California,CA,Mendocino County,06045,County,2020,Year,23357
+California,CA,Merced County,06047,County,2020,Year,37631
+California,CA,Modoc County,06049,County,2020,Year,2572
+California,CA,Mono County,06051,County,2020,Year,2016
+California,CA,Monterey County,06053,County,2020,Year,66806
+California,CA,Napa County,06055,County,2020,Year,29889
+California,CA,Nevada County,06057,County,2020,Year,29969
+California,CA,Orange County,06059,County,2020,Year,520140
+California,CA,Placer County,06061,County,2020,Year,87235
+California,CA,Plumas County,06063,County,2020,Year,6364
+California,CA,Riverside County,06065,County,2020,Year,388967
+California,CA,Sacramento County,06067,County,2020,Year,264502
+California,CA,San Benito County,06069,County,2020,Year,9253
+California,CA,San Bernardino County,06071,County,2020,Year,306571
+California,CA,San Diego County,06073,County,2020,Year,544787
+California,CA,San Francisco County,06075,County,2020,Year,149324
+California,CA,San Joaquin County,06077,County,2020,Year,114709
+California,CA,San Luis Obispo County,06079,County,2020,Year,65680
+California,CA,San Mateo County,06081,County,2020,Year,128413
+California,CA,Santa Barbara County,06083,County,2020,Year,78039
+California,CA,Santa Clara County,06085,County,2020,Year,273553
+California,CA,Santa Cruz County,06087,County,2020,Year,52233
+California,CA,Shasta County,06089,County,2020,Year,47845
+California,CA,Sierra County,06091,County,2020,Year,907
+California,CA,Siskiyou County,06093,County,2020,Year,13717
+California,CA,Solano County,06095,County,2020,Year,81567
+California,CA,Sonoma County,06097,County,2020,Year,108155
+California,CA,Stanislaus County,06099,County,2020,Year,88470
+California,CA,Sutter County,06101,County,2020,Year,17821
+California,CA,Tehama County,06103,County,2020,Year,15153
+California,CA,Trinity County,06105,County,2020,Year,3550
+California,CA,Tulare County,06107,County,2020,Year,64110
+California,CA,Tuolumne County,06109,County,2020,Year,16032
+California,CA,Ventura County,06111,County,2020,Year,153993
+California,CA,Yolo County,06113,County,2020,Year,32690
+California,CA,Yuba County,06115,County,2020,Year,13038
+California,CA,Unknown,06999,County,2020,Year,*
+California,CA,Alameda County,06001,County,2024,Year,267482
+California,CA,Alpine County,06003,County,2024,Year,277
+California,CA,Amador County,06005,County,2024,Year,12238
+California,CA,Butte County,06007,County,2024,Year,47698
+California,CA,Calaveras County,06009,County,2024,Year,14203
+California,CA,Colusa County,06011,County,2024,Year,4151
+California,CA,Contra Costa County,06013,County,2024,Year,219491
+California,CA,Del Norte County,06015,County,2024,Year,6626
+California,CA,El Dorado County,06017,County,2024,Year,50281
+California,CA,Fresno County,06019,County,2024,Year,155228
+California,CA,Glenn County,06021,County,2024,Year,5902
+California,CA,Humboldt County,06023,County,2024,Year,30808
+California,CA,Imperial County,06025,County,2024,Year,35654
+California,CA,Inyo County,06027,County,2024,Year,4718
+California,CA,Kern County,06029,County,2024,Year,130391
+California,CA,Kings County,06031,County,2024,Year,19030
+California,CA,Lake County,06033,County,2024,Year,17620
+California,CA,Lassen County,06035,County,2024,Year,5386
+California,CA,Los Angeles County,06037,County,2024,Year,1643997
+California,CA,Madera County,06039,County,2024,Year,26516
+California,CA,Marin County,06041,County,2024,Year,63024
+California,CA,Mariposa County,06043,County,2024,Year,5067
+California,CA,Mendocino County,06045,County,2024,Year,23991
+California,CA,Merced County,06047,County,2024,Year,40460
+California,CA,Modoc County,06049,County,2024,Year,2667
+California,CA,Mono County,06051,County,2024,Year,2086
+California,CA,Monterey County,06053,County,2024,Year,72124
+California,CA,Napa County,06055,County,2024,Year,31343
+California,CA,Nevada County,06057,County,2024,Year,30779
+California,CA,Orange County,06059,County,2024,Year,575537
+California,CA,Placer County,06061,County,2024,Year,97395
+California,CA,Plumas County,06063,County,2024,Year,6493
+California,CA,Riverside County,06065,County,2024,Year,429605
+California,CA,Sacramento County,06067,County,2024,Year,284104
+California,CA,San Benito County,06069,County,2024,Year,10483
+California,CA,San Bernardino County,06071,County,2024,Year,334795
+California,CA,San Diego County,06073,County,2024,Year,595847
+California,CA,San Francisco County,06075,County,2024,Year,156330
+California,CA,San Joaquin County,06077,County,2024,Year,123619
+California,CA,San Luis Obispo County,06079,County,2024,Year,71682
+California,CA,San Mateo County,06081,County,2024,Year,138128
+California,CA,Santa Barbara County,06083,County,2024,Year,83793
+California,CA,Santa Clara County,06085,County,2024,Year,298699
+California,CA,Santa Cruz County,06087,County,2024,Year,57543
+California,CA,Shasta County,06089,County,2024,Year,48987
+California,CA,Sierra County,06091,County,2024,Year,878
+California,CA,Siskiyou County,06093,County,2024,Year,13994
+California,CA,Solano County,06095,County,2024,Year,88973
+California,CA,Sonoma County,06097,County,2024,Year,117640
+California,CA,Stanislaus County,06099,County,2024,Year,93301
+California,CA,Sutter County,06101,County,2024,Year,18378
+California,CA,Tehama County,06103,County,2024,Year,14837
+California,CA,Trinity County,06105,County,2024,Year,3626
+California,CA,Tulare County,06107,County,2024,Year,68412
+California,CA,Tuolumne County,06109,County,2024,Year,16418
+California,CA,Ventura County,06111,County,2024,Year,169916
+California,CA,Yolo County,06113,County,2024,Year,35812
+California,CA,Yuba County,06115,County,2024,Year,13827
+California,CA,Unknown,06999,County,2024,Year,*
+Texas,TX,Anderson County,48001,County,2020,Year,10518
+Texas,TX,Andrews County,48003,County,2020,Year,2179
+Texas,TX,Angelina County,48005,County,2020,Year,17703
+Texas,TX,Aransas County,48007,County,2020,Year,7394
+Texas,TX,Archer County,48009,County,2020,Year,1925
+Texas,TX,Armstrong County,48011,County,2020,Year,448
+Texas,TX,Atascosa County,48013,County,2020,Year,9033
+Texas,TX,Austin County,48015,County,2020,Year,6760
+Texas,TX,Bailey County,48017,County,2020,Year,1089
+Texas,TX,Bandera County,48019,County,2020,Year,6873
+Texas,TX,Bastrop County,48021,County,2020,Year,15932
+Texas,TX,Baylor County,48023,County,2020,Year,983
+Texas,TX,Bee County,48025,County,2020,Year,4907
+Texas,TX,Bell County,48027,County,2020,Year,53810
+Texas,TX,Bexar County,48029,County,2020,Year,301645
+Texas,TX,Blanco County,48031,County,2020,Year,3418
+Texas,TX,Borden County,48033,County,2020,Year,132
+Texas,TX,Bosque County,48035,County,2020,Year,5144
+Texas,TX,Bowie County,48037,County,2020,Year,19667
+Texas,TX,Brazoria County,48039,County,2020,Year,50818
+Texas,TX,Brazos County,48041,County,2020,Year,24777
+Texas,TX,Brewster County,48043,County,2020,Year,2234
+Texas,TX,Briscoe County,48045,County,2020,Year,399
+Texas,TX,Brooks County,48047,County,2020,Year,1576
+Texas,TX,Brown County,48049,County,2020,Year,9197
+Texas,TX,Burleson County,48051,County,2020,Year,4535
+Texas,TX,Burnet County,48053,County,2020,Year,13115
+Texas,TX,Caldwell County,48055,County,2020,Year,7700
+Texas,TX,Calhoun County,48057,County,2020,Year,4250
+Texas,TX,Callahan County,48059,County,2020,Year,3356
+Texas,TX,Cameron County,48061,County,2020,Year,65459
+Texas,TX,Camp County,48063,County,2020,Year,2803
+Texas,TX,Carson County,48065,County,2020,Year,1218
+Texas,TX,Cass County,48067,County,2020,Year,8084
+Texas,TX,Castro County,48069,County,2020,Year,1218
+Texas,TX,Chambers County,48071,County,2020,Year,6435
+Texas,TX,Cherokee County,48073,County,2020,Year,10743
+Texas,TX,Childress County,48075,County,2020,Year,1320
+Texas,TX,Clay County,48077,County,2020,Year,2660
+Texas,TX,Cochran County,48079,County,2020,Year,559
+Texas,TX,Coke County,48081,County,2020,Year,944
+Texas,TX,Coleman County,48083,County,2020,Year,2524
+Texas,TX,Collin County,48085,County,2020,Year,124598
+Texas,TX,Collingsworth County,48087,County,2020,Year,642
+Texas,TX,Colorado County,48089,County,2020,Year,5335
+Texas,TX,Comal County,48091,County,2020,Year,35281
+Texas,TX,Comanche County,48093,County,2020,Year,3589
+Texas,TX,Concho County,48095,County,2020,Year,729
+Texas,TX,Cooke County,48097,County,2020,Year,8413
+Texas,TX,Coryell County,48099,County,2020,Year,10736
+Texas,TX,Cottle County,48101,County,2020,Year,414
+Texas,TX,Crane County,48103,County,2020,Year,677
+Texas,TX,Crockett County,48105,County,2020,Year,728
+Texas,TX,Crosby County,48107,County,2020,Year,1276
+Texas,TX,Culberson County,48109,County,2020,Year,552
+Texas,TX,Dallam County,48111,County,2020,Year,963
+Texas,TX,Dallas County,48113,County,2020,Year,325213
+Texas,TX,Dawson County,48115,County,2020,Year,2303
+Texas,TX,Deaf Smith County,48117,County,2020,Year,2759
+Texas,TX,Delta County,48119,County,2020,Year,1378
+Texas,TX,Denton County,48121,County,2020,Year,103783
+Texas,TX,Dewitt County,48123,County,2020,Year,4536
+Texas,TX,Dickens County,48125,County,2020,Year,540
+Texas,TX,Dimmit County,48127,County,2020,Year,1952
+Texas,TX,Donley County,48129,County,2020,Year,893
+Texas,TX,Duval County,48131,County,2020,Year,2376
+Texas,TX,Eastland County,48133,County,2020,Year,4629
+Texas,TX,Ector County,48135,County,2020,Year,19637
+Texas,TX,Edwards County,48137,County,2020,Year,539
+Texas,TX,El Paso County,48141,County,2020,Year,133333
+Texas,TX,Ellis County,48139,County,2020,Year,29405
+Texas,TX,Erath County,48143,County,2020,Year,6926
+Texas,TX,Falls County,48145,County,2020,Year,3670
+Texas,TX,Fannin County,48147,County,2020,Year,7781
+Texas,TX,Fayette County,48149,County,2020,Year,7063
+Texas,TX,Fisher County,48151,County,2020,Year,967
+Texas,TX,Floyd County,48153,County,2020,Year,1244
+Texas,TX,Foard County,48155,County,2020,Year,344
+Texas,TX,Fort Bend County,48157,County,2020,Year,100642
+Texas,TX,Franklin County,48159,County,2020,Year,2388
+Texas,TX,Freestone County,48161,County,2020,Year,4408
+Texas,TX,Frio County,48163,County,2020,Year,2784
+Texas,TX,Gaines County,48165,County,2020,Year,2025
+Texas,TX,Galveston County,48167,County,2020,Year,57969
+Texas,TX,Garza County,48169,County,2020,Year,860
+Texas,TX,Gillespie County,48171,County,2020,Year,8725
+Texas,TX,Glasscock County,48173,County,2020,Year,192
+Texas,TX,Goliad County,48175,County,2020,Year,1765
+Texas,TX,Gonzales County,48177,County,2020,Year,4072
+Texas,TX,Gray County,48179,County,2020,Year,4093
+Texas,TX,Grayson County,48181,County,2020,Year,29354
+Texas,TX,Gregg County,48183,County,2020,Year,24756
+Texas,TX,Grimes County,48185,County,2020,Year,6029
+Texas,TX,Guadalupe County,48187,County,2020,Year,27824
+Texas,TX,Hale County,48189,County,2020,Year,5518
+Texas,TX,Hall County,48191,County,2020,Year,806
+Texas,TX,Hamilton County,48193,County,2020,Year,2327
+Texas,TX,Hansford County,48195,County,2020,Year,928
+Texas,TX,Hardeman County,48197,County,2020,Year,970
+Texas,TX,Hardin County,48199,County,2020,Year,11647
+Texas,TX,Harris County,48201,County,2020,Year,562967
+Texas,TX,Harrison County,48203,County,2020,Year,13587
+Texas,TX,Hartley County,48205,County,2020,Year,664
+Texas,TX,Haskell County,48207,County,2020,Year,1352
+Texas,TX,Hays County,48209,County,2020,Year,31817
+Texas,TX,Hemphill County,48211,County,2020,Year,626
+Texas,TX,Henderson County,48213,County,2020,Year,21121
+Texas,TX,Hidalgo County,48215,County,2020,Year,107815
+Texas,TX,Hill County,48217,County,2020,Year,8835
+Texas,TX,Hockley County,48219,County,2020,Year,3956
+Texas,TX,Hood County,48221,County,2020,Year,17482
+Texas,TX,Hopkins County,48223,County,2020,Year,8020
+Texas,TX,Houston County,48225,County,2020,Year,5531
+Texas,TX,Howard County,48227,County,2020,Year,5327
+Texas,TX,Hudspeth County,48229,County,2020,Year,724
+Texas,TX,Hunt County,48231,County,2020,Year,18759
+Texas,TX,Hutchinson County,48233,County,2020,Year,4119
+Texas,TX,Irion County,48235,County,2020,Year,358
+Texas,TX,Jack County,48237,County,2020,Year,1635
+Texas,TX,Jackson County,48239,County,2020,Year,3142
+Texas,TX,Jasper County,48241,County,2020,Year,8411
+Texas,TX,Jeff Davis County,48243,County,2020,Year,720
+Texas,TX,Jefferson County,48245,County,2020,Year,43353
+Texas,TX,Jim Hogg County,48247,County,2020,Year,963
+Texas,TX,Jim Wells County,48249,County,2020,Year,7899
+Texas,TX,Johnson County,48251,County,2020,Year,30934
+Texas,TX,Jones County,48253,County,2020,Year,3469
+Texas,TX,Karnes County,48255,County,2020,Year,2706
+Texas,TX,Kaufman County,48257,County,2020,Year,21280
+Texas,TX,Kendall County,48259,County,2020,Year,10308
+Texas,TX,Kenedy County,48261,County,2020,Year,48
+Texas,TX,Kent County,48263,County,2020,Year,205
+Texas,TX,Kerr County,48265,County,2020,Year,16528
+Texas,TX,Kimble County,48267,County,2020,Year,1288
+Texas,TX,King County,48269,County,2020,Year,36
+Texas,TX,Kinney County,48271,County,2020,Year,918
+Texas,TX,Kleberg County,48273,County,2020,Year,5070
+Texas,TX,Knox County,48275,County,2020,Year,853
+Texas,TX,La Salle County,48283,County,2020,Year,1163
+Texas,TX,Lamar County,48277,County,2020,Year,11551
+Texas,TX,Lamb County,48279,County,2020,Year,2638
+Texas,TX,Lampasas County,48281,County,2020,Year,5392
+Texas,TX,Lavaca County,48285,County,2020,Year,5344
+Texas,TX,Lee County,48287,County,2020,Year,3723
+Texas,TX,Leon County,48289,County,2020,Year,5040
+Texas,TX,Liberty County,48291,County,2020,Year,13946
+Texas,TX,Limestone County,48293,County,2020,Year,5201
+Texas,TX,Lipscomb County,48295,County,2020,Year,609
+Texas,TX,Live Oak County,48297,County,2020,Year,2538
+Texas,TX,Llano County,48299,County,2020,Year,7533
+Texas,TX,Loving County,48301,County,2020,Year,15
+Texas,TX,Lubbock County,48303,County,2020,Year,47656
+Texas,TX,Lynn County,48305,County,2020,Year,1076
+Texas,TX,Madison County,48313,County,2020,Year,2459
+Texas,TX,Marion County,48315,County,2020,Year,3051
+Texas,TX,Martin County,48317,County,2020,Year,753
+Texas,TX,Mason County,48319,County,2020,Year,1335
+Texas,TX,Matagorda County,48321,County,2020,Year,7209
+Texas,TX,Maverick County,48323,County,2020,Year,10392
+Texas,TX,Mcculloch County,48307,County,2020,Year,2139
+Texas,TX,Mclennan County,48309,County,2020,Year,45276
+Texas,TX,Mcmullen County,48311,County,2020,Year,190
+Texas,TX,Medina County,48325,County,2020,Year,9887
+Texas,TX,Menard County,48327,County,2020,Year,683
+Texas,TX,Midland County,48329,County,2020,Year,19341
+Texas,TX,Milam County,48331,County,2020,Year,6080
+Texas,TX,Mills County,48333,County,2020,Year,1410
+Texas,TX,Mitchell County,48335,County,2020,Year,1433
+Texas,TX,Montague County,48337,County,2020,Year,5264
+Texas,TX,Montgomery County,48339,County,2020,Year,93062
+Texas,TX,Moore County,48341,County,2020,Year,2568
+Texas,TX,Morris County,48343,County,2020,Year,3425
+Texas,TX,Motley County,48345,County,2020,Year,361
+Texas,TX,Nacogdoches County,48347,County,2020,Year,11707
+Texas,TX,Navarro County,48349,County,2020,Year,10556
+Texas,TX,Newton County,48351,County,2020,Year,3051
+Texas,TX,Nolan County,48353,County,2020,Year,3269
+Texas,TX,Nueces County,48355,County,2020,Year,61041
+Texas,TX,Ochiltree County,48357,County,2020,Year,1305
+Texas,TX,Oldham County,48359,County,2020,Year,443
+Texas,TX,Orange County,48361,County,2020,Year,16277
+Texas,TX,Palo Pinto County,48363,County,2020,Year,6539
+Texas,TX,Panola County,48365,County,2020,Year,5259
+Texas,TX,Parker County,48367,County,2020,Year,27075
+Texas,TX,Parmer County,48369,County,2020,Year,1507
+Texas,TX,Pecos County,48371,County,2020,Year,2306
+Texas,TX,Polk County,48373,County,2020,Year,18824
+Texas,TX,Potter County,48375,County,2020,Year,19047
+Texas,TX,Presidio County,48377,County,2020,Year,1863
+Texas,TX,Rains County,48379,County,2020,Year,3201
+Texas,TX,Randall County,48381,County,2020,Year,23540
+Texas,TX,Reagan County,48383,County,2020,Year,445
+Texas,TX,Real County,48385,County,2020,Year,1329
+Texas,TX,Red River County,48387,County,2020,Year,3512
+Texas,TX,Reeves County,48389,County,2020,Year,2112
+Texas,TX,Refugio County,48391,County,2020,Year,1737
+Texas,TX,Roberts County,48393,County,2020,Year,178
+Texas,TX,Robertson County,48395,County,2020,Year,3860
+Texas,TX,Rockwall County,48397,County,2020,Year,15487
+Texas,TX,Runnels County,48399,County,2020,Year,2562
+Texas,TX,Rusk County,48401,County,2020,Year,10270
+Texas,TX,Sabine County,48403,County,2020,Year,3374
+Texas,TX,San Augustine County,48405,County,2020,Year,2500
+Texas,TX,San Jacinto County,48407,County,2020,Year,6616
+Texas,TX,San Patricio County,48409,County,2020,Year,12968
+Texas,TX,San Saba County,48411,County,2020,Year,1529
+Texas,TX,Schleicher County,48413,County,2020,Year,594
+Texas,TX,Scurry County,48415,County,2020,Year,2953
+Texas,TX,Shackelford County,48417,County,2020,Year,765
+Texas,TX,Shelby County,48419,County,2020,Year,5147
+Texas,TX,Sherman County,48421,County,2020,Year,388
+Texas,TX,Smith County,48423,County,2020,Year,46786
+Texas,TX,Somervell County,48425,County,2020,Year,1990
+Texas,TX,Starr County,48427,County,2020,Year,9613
+Texas,TX,Stephens County,48429,County,2020,Year,2083
+Texas,TX,Sterling County,48431,County,2020,Year,239
+Texas,TX,Stonewall County,48433,County,2020,Year,358
+Texas,TX,Sutton County,48435,County,2020,Year,782
+Texas,TX,Swisher County,48437,County,2020,Year,1442
+Texas,TX,Tarrant County,48439,County,2020,Year,279833
+Texas,TX,Taylor County,48441,County,2020,Year,25119
+Texas,TX,Terrell County,48443,County,2020,Year,246
+Texas,TX,Terry County,48445,County,2020,Year,2041
+Texas,TX,Throckmorton County,48447,County,2020,Year,401
+Texas,TX,Titus County,48449,County,2020,Year,5613
+Texas,TX,Tom Green County,48451,County,2020,Year,22373
+Texas,TX,Travis County,48453,County,2020,Year,140609
+Texas,TX,Trinity County,48455,County,2020,Year,4253
+Texas,TX,Tyler County,48457,County,2020,Year,5104
+Texas,TX,Upshur County,48459,County,2020,Year,8930
+Texas,TX,Upton County,48461,County,2020,Year,587
+Texas,TX,Uvalde County,48463,County,2020,Year,5436
+Texas,TX,Val Verde County,48465,County,2020,Year,8588
+Texas,TX,Van Zandt County,48467,County,2020,Year,13046
+Texas,TX,Victoria County,48469,County,2020,Year,17813
+Texas,TX,Walker County,48471,County,2020,Year,10443
+Texas,TX,Waller County,48473,County,2020,Year,7781
+Texas,TX,Ward County,48475,County,2020,Year,1869
+Texas,TX,Washington County,48477,County,2020,Year,8760
+Texas,TX,Webb County,48479,County,2020,Year,33815
+Texas,TX,Wharton County,48481,County,2020,Year,8499
+Texas,TX,Wheeler County,48483,County,2020,Year,1115
+Texas,TX,Wichita County,48485,County,2020,Year,24950
+Texas,TX,Wilbarger County,48487,County,2020,Year,2812
+Texas,TX,Willacy County,48489,County,2020,Year,3629
+Texas,TX,Williamson County,48491,County,2020,Year,83237
+Texas,TX,Wilson County,48493,County,2020,Year,9489
+Texas,TX,Winkler County,48495,County,2020,Year,1065
+Texas,TX,Wise County,48497,County,2020,Year,12281
+Texas,TX,Wood County,48499,County,2020,Year,14806
+Texas,TX,Yoakum County,48501,County,2020,Year,1236
+Texas,TX,Young County,48503,County,2020,Year,4377
+Texas,TX,Zapata County,48505,County,2020,Year,2008
+Texas,TX,Zavala County,48507,County,2020,Year,2063
+Texas,TX,Unknown,48999,County,2020,Year,*
+Texas,TX,Anderson County,48001,County,2024,Year,11452
+Texas,TX,Andrews County,48003,County,2024,Year,2389
+Texas,TX,Angelina County,48005,County,2024,Year,18687
+Texas,TX,Aransas County,48007,County,2024,Year,8260
+Texas,TX,Archer County,48009,County,2024,Year,1987
+Texas,TX,Armstrong County,48011,County,2024,Year,515
+Texas,TX,Atascosa County,48013,County,2024,Year,9809
+Texas,TX,Austin County,48015,County,2024,Year,7782
+Texas,TX,Bailey County,48017,County,2024,Year,1121
+Texas,TX,Bandera County,48019,County,2024,Year,7964
+Texas,TX,Bastrop County,48021,County,2024,Year,18479
+Texas,TX,Baylor County,48023,County,2024,Year,952
+Texas,TX,Bee County,48025,County,2024,Year,5181
+Texas,TX,Bell County,48027,County,2024,Year,61418
+Texas,TX,Bexar County,48029,County,2024,Year,327574
+Texas,TX,Blanco County,48031,County,2024,Year,4250
+Texas,TX,Borden County,48033,County,2024,Year,115
+Texas,TX,Bosque County,48035,County,2024,Year,5615
+Texas,TX,Bowie County,48037,County,2024,Year,20186
+Texas,TX,Brazoria County,48039,County,2024,Year,60688
+Texas,TX,Brazos County,48041,County,2024,Year,28975
+Texas,TX,Brewster County,48043,County,2024,Year,2353
+Texas,TX,Briscoe County,48045,County,2024,Year,418
+Texas,TX,Brooks County,48047,County,2024,Year,1550
+Texas,TX,Brown County,48049,County,2024,Year,9705
+Texas,TX,Burleson County,48051,County,2024,Year,5127
+Texas,TX,Burnet County,48053,County,2024,Year,14147
+Texas,TX,Caldwell County,48055,County,2024,Year,8521
+Texas,TX,Calhoun County,48057,County,2024,Year,4582
+Texas,TX,Callahan County,48059,County,2024,Year,3627
+Texas,TX,Cameron County,48061,County,2024,Year,70678
+Texas,TX,Camp County,48063,County,2024,Year,3094
+Texas,TX,Carson County,48065,County,2024,Year,1268
+Texas,TX,Cass County,48067,County,2024,Year,8516
+Texas,TX,Castro County,48069,County,2024,Year,1227
+Texas,TX,Chambers County,48071,County,2024,Year,7609
+Texas,TX,Cherokee County,48073,County,2024,Year,10972
+Texas,TX,Childress County,48075,County,2024,Year,1343
+Texas,TX,Clay County,48077,County,2024,Year,2606
+Texas,TX,Cochran County,48079,County,2024,Year,544
+Texas,TX,Coke County,48081,County,2024,Year,1008
+Texas,TX,Coleman County,48083,County,2024,Year,2611
+Texas,TX,Collin County,48085,County,2024,Year,148301
+Texas,TX,Collingsworth County,48087,County,2024,Year,662
+Texas,TX,Colorado County,48089,County,2024,Year,5830
+Texas,TX,Comal County,48091,County,2024,Year,44470
+Texas,TX,Comanche County,48093,County,2024,Year,3662
+Texas,TX,Concho County,48095,County,2024,Year,771
+Texas,TX,Cooke County,48097,County,2024,Year,9249
+Texas,TX,Coryell County,48099,County,2024,Year,11973
+Texas,TX,Cottle County,48101,County,2024,Year,408
+Texas,TX,Crane County,48103,County,2024,Year,674
+Texas,TX,Crockett County,48105,County,2024,Year,766
+Texas,TX,Crosby County,48107,County,2024,Year,1279
+Texas,TX,Culberson County,48109,County,2024,Year,527
+Texas,TX,Dallam County,48111,County,2024,Year,1014
+Texas,TX,Dallas County,48113,County,2024,Year,351999
+Texas,TX,Dawson County,48115,County,2024,Year,2204
+Texas,TX,Deaf Smith County,48117,County,2024,Year,2769
+Texas,TX,Delta County,48119,County,2024,Year,1399
+Texas,TX,Denton County,48121,County,2024,Year,125582
+Texas,TX,Dewitt County,48123,County,2024,Year,4644
+Texas,TX,Dickens County,48125,County,2024,Year,566
+Texas,TX,Dimmit County,48127,County,2024,Year,1886
+Texas,TX,Donley County,48129,County,2024,Year,955
+Texas,TX,Duval County,48131,County,2024,Year,2385
+Texas,TX,Eastland County,48133,County,2024,Year,4944
+Texas,TX,Ector County,48135,County,2024,Year,21310
+Texas,TX,Edwards County,48137,County,2024,Year,608
+Texas,TX,El Paso County,48141,County,2024,Year,146888
+Texas,TX,Ellis County,48139,County,2024,Year,35395
+Texas,TX,Erath County,48143,County,2024,Year,7574
+Texas,TX,Falls County,48145,County,2024,Year,3792
+Texas,TX,Fannin County,48147,County,2024,Year,8169
+Texas,TX,Fayette County,48149,County,2024,Year,7732
+Texas,TX,Fisher County,48151,County,2024,Year,944
+Texas,TX,Floyd County,48153,County,2024,Year,1208
+Texas,TX,Foard County,48155,County,2024,Year,353
+Texas,TX,Fort Bend County,48157,County,2024,Year,125866
+Texas,TX,Franklin County,48159,County,2024,Year,2623
+Texas,TX,Freestone County,48161,County,2024,Year,4749
+Texas,TX,Frio County,48163,County,2024,Year,2945
+Texas,TX,Gaines County,48165,County,2024,Year,2170
+Texas,TX,Galveston County,48167,County,2024,Year,66572
+Texas,TX,Garza County,48169,County,2024,Year,872
+Texas,TX,Gillespie County,48171,County,2024,Year,9477
+Texas,TX,Glasscock County,48173,County,2024,Year,194
+Texas,TX,Goliad County,48175,County,2024,Year,1872
+Texas,TX,Gonzales County,48177,County,2024,Year,4576
+Texas,TX,Gray County,48179,County,2024,Year,4187
+Texas,TX,Grayson County,48181,County,2024,Year,32305
+Texas,TX,Gregg County,48183,County,2024,Year,27825
+Texas,TX,Grimes County,48185,County,2024,Year,7088
+Texas,TX,Guadalupe County,48187,County,2024,Year,31849
+Texas,TX,Hale County,48189,County,2024,Year,5730
+Texas,TX,Hall County,48191,County,2024,Year,782
+Texas,TX,Hamilton County,48193,County,2024,Year,2483
+Texas,TX,Hansford County,48195,County,2024,Year,918
+Texas,TX,Hardeman County,48197,County,2024,Year,962
+Texas,TX,Hardin County,48199,County,2024,Year,12759
+Texas,TX,Harris County,48201,County,2024,Year,631505
+Texas,TX,Harrison County,48203,County,2024,Year,13938
+Texas,TX,Hartley County,48205,County,2024,Year,529
+Texas,TX,Haskell County,48207,County,2024,Year,1424
+Texas,TX,Hays County,48209,County,2024,Year,40080
+Texas,TX,Hemphill County,48211,County,2024,Year,673
+Texas,TX,Henderson County,48213,County,2024,Year,22056
+Texas,TX,Hidalgo County,48215,County,2024,Year,119266
+Texas,TX,Hill County,48217,County,2024,Year,9487
+Texas,TX,Hockley County,48219,County,2024,Year,4161
+Texas,TX,Hood County,48221,County,2024,Year,19981
+Texas,TX,Hopkins County,48223,County,2024,Year,8520
+Texas,TX,Houston County,48225,County,2024,Year,5858
+Texas,TX,Howard County,48227,County,2024,Year,5246
+Texas,TX,Hudspeth County,48229,County,2024,Year,760
+Texas,TX,Hunt County,48231,County,2024,Year,20368
+Texas,TX,Hutchinson County,48233,County,2024,Year,4230
+Texas,TX,Irion County,48235,County,2024,Year,381
+Texas,TX,Jack County,48237,County,2024,Year,1790
+Texas,TX,Jackson County,48239,County,2024,Year,3371
+Texas,TX,Jasper County,48241,County,2024,Year,8921
+Texas,TX,Jeff Davis County,48243,County,2024,Year,720
+Texas,TX,Jefferson County,48245,County,2024,Year,45323
+Texas,TX,Jim Hogg County,48247,County,2024,Year,982
+Texas,TX,Jim Wells County,48249,County,2024,Year,8595
+Texas,TX,Johnson County,48251,County,2024,Year,35936
+Texas,TX,Jones County,48253,County,2024,Year,3463
+Texas,TX,Karnes County,48255,County,2024,Year,2916
+Texas,TX,Kaufman County,48257,County,2024,Year,25868
+Texas,TX,Kendall County,48259,County,2024,Year,13687
+Texas,TX,Kenedy County,48261,County,2024,Year,52
+Texas,TX,Kent County,48263,County,2024,Year,210
+Texas,TX,Kerr County,48265,County,2024,Year,17673
+Texas,TX,Kimble County,48267,County,2024,Year,1330
+Texas,TX,King County,48269,County,2024,Year,36
+Texas,TX,Kinney County,48271,County,2024,Year,915
+Texas,TX,Kleberg County,48273,County,2024,Year,5293
+Texas,TX,Knox County,48275,County,2024,Year,870
+Texas,TX,La Salle County,48283,County,2024,Year,1161
+Texas,TX,Lamar County,48277,County,2024,Year,11781
+Texas,TX,Lamb County,48279,County,2024,Year,2689
+Texas,TX,Lampasas County,48281,County,2024,Year,6085
+Texas,TX,Lavaca County,48285,County,2024,Year,5896
+Texas,TX,Lee County,48287,County,2024,Year,4023
+Texas,TX,Leon County,48289,County,2024,Year,5555
+Texas,TX,Liberty County,48291,County,2024,Year,16268
+Texas,TX,Limestone County,48293,County,2024,Year,5419
+Texas,TX,Lipscomb County,48295,County,2024,Year,651
+Texas,TX,Live Oak County,48297,County,2024,Year,2552
+Texas,TX,Llano County,48299,County,2024,Year,8718
+Texas,TX,Loving County,48301,County,2024,Year,13
+Texas,TX,Lubbock County,48303,County,2024,Year,52254
+Texas,TX,Lynn County,48305,County,2024,Year,1098
+Texas,TX,Madison County,48313,County,2024,Year,2587
+Texas,TX,Marion County,48315,County,2024,Year,3029
+Texas,TX,Martin County,48317,County,2024,Year,807
+Texas,TX,Mason County,48319,County,2024,Year,1403
+Texas,TX,Matagorda County,48321,County,2024,Year,7934
+Texas,TX,Maverick County,48323,County,2024,Year,11102
+Texas,TX,Mcculloch County,48307,County,2024,Year,2270
+Texas,TX,Mclennan County,48309,County,2024,Year,48825
+Texas,TX,Mcmullen County,48311,County,2024,Year,177
+Texas,TX,Medina County,48325,County,2024,Year,11183
+Texas,TX,Menard County,48327,County,2024,Year,707
+Texas,TX,Midland County,48329,County,2024,Year,21221
+Texas,TX,Milam County,48331,County,2024,Year,6451
+Texas,TX,Mills County,48333,County,2024,Year,1499
+Texas,TX,Mitchell County,48335,County,2024,Year,1507
+Texas,TX,Montague County,48337,County,2024,Year,5761
+Texas,TX,Montgomery County,48339,County,2024,Year,113067
+Texas,TX,Moore County,48341,County,2024,Year,2660
+Texas,TX,Morris County,48343,County,2024,Year,3533
+Texas,TX,Motley County,48345,County,2024,Year,355
+Texas,TX,Nacogdoches County,48347,County,2024,Year,12562
+Texas,TX,Navarro County,48349,County,2024,Year,11139
+Texas,TX,Newton County,48351,County,2024,Year,2967
+Texas,TX,Nolan County,48353,County,2024,Year,3256
+Texas,TX,Nueces County,48355,County,2024,Year,65448
+Texas,TX,Ochiltree County,48357,County,2024,Year,1376
+Texas,TX,Oldham County,48359,County,2024,Year,464
+Texas,TX,Orange County,48361,County,2024,Year,17019
+Texas,TX,Palo Pinto County,48363,County,2024,Year,6933
+Texas,TX,Panola County,48365,County,2024,Year,5486
+Texas,TX,Parker County,48367,County,2024,Year,31852
+Texas,TX,Parmer County,48369,County,2024,Year,1486
+Texas,TX,Pecos County,48371,County,2024,Year,2416
+Texas,TX,Polk County,48373,County,2024,Year,18977
+Texas,TX,Potter County,48375,County,2024,Year,19926
+Texas,TX,Presidio County,48377,County,2024,Year,1797
+Texas,TX,Rains County,48379,County,2024,Year,3504
+Texas,TX,Randall County,48381,County,2024,Year,26264
+Texas,TX,Reagan County,48383,County,2024,Year,480
+Texas,TX,Real County,48385,County,2024,Year,1368
+Texas,TX,Red River County,48387,County,2024,Year,3638
+Texas,TX,Reeves County,48389,County,2024,Year,2099
+Texas,TX,Refugio County,48391,County,2024,Year,1814
+Texas,TX,Roberts County,48393,County,2024,Year,191
+Texas,TX,Robertson County,48395,County,2024,Year,4250
+Texas,TX,Rockwall County,48397,County,2024,Year,19888
+Texas,TX,Runnels County,48399,County,2024,Year,2642
+Texas,TX,Rusk County,48401,County,2024,Year,10560
+Texas,TX,Sabine County,48403,County,2024,Year,3558
+Texas,TX,San Augustine County,48405,County,2024,Year,2481
+Texas,TX,San Jacinto County,48407,County,2024,Year,6693
+Texas,TX,San Patricio County,48409,County,2024,Year,14141
+Texas,TX,San Saba County,48411,County,2024,Year,1572
+Texas,TX,Schleicher County,48413,County,2024,Year,613
+Texas,TX,Scurry County,48415,County,2024,Year,3101
+Texas,TX,Shackelford County,48417,County,2024,Year,807
+Texas,TX,Shelby County,48419,County,2024,Year,5364
+Texas,TX,Sherman County,48421,County,2024,Year,400
+Texas,TX,Smith County,48423,County,2024,Year,50881
+Texas,TX,Somervell County,48425,County,2024,Year,2313
+Texas,TX,Starr County,48427,County,2024,Year,10119
+Texas,TX,Stephens County,48429,County,2024,Year,2101
+Texas,TX,Sterling County,48431,County,2024,Year,241
+Texas,TX,Stonewall County,48433,County,2024,Year,397
+Texas,TX,Sutton County,48435,County,2024,Year,836
+Texas,TX,Swisher County,48437,County,2024,Year,1410
+Texas,TX,Tarrant County,48439,County,2024,Year,308814
+Texas,TX,Taylor County,48441,County,2024,Year,27538
+Texas,TX,Terrell County,48443,County,2024,Year,235
+Texas,TX,Terry County,48445,County,2024,Year,2046
+Texas,TX,Throckmorton County,48447,County,2024,Year,388
+Texas,TX,Titus County,48449,County,2024,Year,5728
+Texas,TX,Tom Green County,48451,County,2024,Year,24013
+Texas,TX,Travis County,48453,County,2024,Year,153139
+Texas,TX,Trinity County,48455,County,2024,Year,4612
+Texas,TX,Tyler County,48457,County,2024,Year,5303
+Texas,TX,Upshur County,48459,County,2024,Year,9482
+Texas,TX,Upton County,48461,County,2024,Year,651
+Texas,TX,Uvalde County,48463,County,2024,Year,5626
+Texas,TX,Val Verde County,48465,County,2024,Year,8811
+Texas,TX,Van Zandt County,48467,County,2024,Year,14094
+Texas,TX,Victoria County,48469,County,2024,Year,19245
+Texas,TX,Walker County,48471,County,2024,Year,12095
+Texas,TX,Waller County,48473,County,2024,Year,8441
+Texas,TX,Ward County,48475,County,2024,Year,1911
+Texas,TX,Washington County,48477,County,2024,Year,9896
+Texas,TX,Webb County,48479,County,2024,Year,37302
+Texas,TX,Wharton County,48481,County,2024,Year,9119
+Texas,TX,Wheeler County,48483,County,2024,Year,1170
+Texas,TX,Wichita County,48485,County,2024,Year,26487
+Texas,TX,Wilbarger County,48487,County,2024,Year,2820
+Texas,TX,Willacy County,48489,County,2024,Year,3646
+Texas,TX,Williamson County,48491,County,2024,Year,98408
+Texas,TX,Wilson County,48493,County,2024,Year,10881
+Texas,TX,Winkler County,48495,County,2024,Year,1098
+Texas,TX,Wise County,48497,County,2024,Year,14435
+Texas,TX,Wood County,48499,County,2024,Year,16274
+Texas,TX,Yoakum County,48501,County,2024,Year,1295
+Texas,TX,Young County,48503,County,2024,Year,4589
+Texas,TX,Zapata County,48505,County,2024,Year,2123
+Texas,TX,Zavala County,48507,County,2024,Year,2105
+Texas,TX,Unknown,48999,County,2024,Year,*
+Florida,FL,Alachua County,12001,County,2020,Year,45873
+Florida,FL,Baker County,12003,County,2020,Year,4995
+Florida,FL,Bay County,12005,County,2020,Year,37034
+Florida,FL,Bradford County,12007,County,2020,Year,5849
+Florida,FL,Brevard County,12009,County,2020,Year,159187
+Florida,FL,Broward County,12011,County,2020,Year,331977
+Florida,FL,Calhoun County,12013,County,2020,Year,3009
+Florida,FL,Charlotte County,12015,County,2020,Year,71671
+Florida,FL,Citrus County,12017,County,2020,Year,60361
+Florida,FL,Clay County,12019,County,2020,Year,43844
+Florida,FL,Collier County,12021,County,2020,Year,104868
+Florida,FL,Columbia County,12023,County,2020,Year,16613
+Florida,FL,Desoto County,12027,County,2020,Year,7300
+Florida,FL,Dixie County,12029,County,2020,Year,4292
+Florida,FL,Duval County,12031,County,2020,Year,168420
+Florida,FL,Escambia County,12033,County,2020,Year,71367
+Florida,FL,Flagler County,12035,County,2020,Year,39430
+Florida,FL,Franklin County,12037,County,2020,Year,3143
+Florida,FL,Gadsden County,12039,County,2020,Year,10423
+Florida,FL,Gilchrist County,12041,County,2020,Year,4092
+Florida,FL,Glades County,12043,County,2020,Year,2796
+Florida,FL,Gulf County,12045,County,2020,Year,3834
+Florida,FL,Hamilton County,12047,County,2020,Year,2957
+Florida,FL,Hardee County,12049,County,2020,Year,4505
+Florida,FL,Hendry County,12051,County,2020,Year,6020
+Florida,FL,Hernando County,12053,County,2020,Year,60328
+Florida,FL,Highlands County,12055,County,2020,Year,34146
+Florida,FL,Hillsborough County,12057,County,2020,Year,242475
+Florida,FL,Holmes County,12059,County,2020,Year,4434
+Florida,FL,Indian River County,12061,County,2020,Year,54792
+Florida,FL,Jackson County,12063,County,2020,Year,11273
+Florida,FL,Jefferson County,12065,County,2020,Year,3698
+Florida,FL,Lafayette County,12067,County,2020,Year,1481
+Florida,FL,Lake County,12069,County,2020,Year,107075
+Florida,FL,Lee County,12071,County,2020,Year,201898
+Florida,FL,Leon County,12073,County,2020,Year,46705
+Florida,FL,Levy County,12075,County,2020,Year,12439
+Florida,FL,Liberty County,12077,County,2020,Year,1393
+Florida,FL,Madison County,12079,County,2020,Year,4555
+Florida,FL,Manatee County,12081,County,2020,Year,105025
+Florida,FL,Marion County,12083,County,2020,Year,120179
+Florida,FL,Martin County,12085,County,2020,Year,47228
+Florida,FL,Miami-Dade County,12086,County,2020,Year,476154
+Florida,FL,Monroe County,12087,County,2020,Year,17440
+Florida,FL,Nassau County,12089,County,2020,Year,23257
+Florida,FL,Okaloosa County,12091,County,2020,Year,41634
+Florida,FL,Okeechobee County,12093,County,2020,Year,8578
+Florida,FL,Orange County,12095,County,2020,Year,192714
+Florida,FL,Osceola County,12097,County,2020,Year,62739
+Florida,FL,Palm Beach County,12099,County,2020,Year,332298
+Florida,FL,Pasco County,12101,County,2020,Year,136386
+Florida,FL,Pinellas County,12103,County,2020,Year,249180
+Florida,FL,Polk County,12105,County,2020,Year,160641
+Florida,FL,Putnam County,12107,County,2020,Year,20052
+Florida,FL,Santa Rosa County,12113,County,2020,Year,36551
+Florida,FL,Sarasota County,12115,County,2020,Year,149596
+Florida,FL,Seminole County,12117,County,2020,Year,82312
+Florida,FL,St. Johns County,12109,County,2020,Year,60551
+Florida,FL,St. Lucie County,12111,County,2020,Year,82988
+Florida,FL,Sumter County,12119,County,2020,Year,74830
+Florida,FL,Suwannee County,12121,County,2020,Year,11013
+Florida,FL,Taylor County,12123,County,2020,Year,5003
+Florida,FL,Union County,12125,County,2020,Year,2196
+Florida,FL,Volusia County,12127,County,2020,Year,152055
+Florida,FL,Wakulla County,12129,County,2020,Year,6428
+Florida,FL,Walton County,12131,County,2020,Year,16808
+Florida,FL,Washington County,12133,County,2020,Year,5693
+Florida,FL,Unknown,12999,County,2020,Year,*
+Florida,FL,Alachua County,12001,County,2024,Year,52347
+Florida,FL,Baker County,12003,County,2024,Year,5516
+Florida,FL,Bay County,12005,County,2024,Year,41880
+Florida,FL,Bradford County,12007,County,2024,Year,6101
+Florida,FL,Brevard County,12009,County,2024,Year,176230
+Florida,FL,Broward County,12011,County,2024,Year,362930
+Florida,FL,Calhoun County,12013,County,2024,Year,3120
+Florida,FL,Charlotte County,12015,County,2024,Year,78682
+Florida,FL,Citrus County,12017,County,2024,Year,65470
+Florida,FL,Clay County,12019,County,2024,Year,49674
+Florida,FL,Collier County,12021,County,2024,Year,118456
+Florida,FL,Columbia County,12023,County,2024,Year,18235
+Florida,FL,Desoto County,12027,County,2024,Year,7801
+Florida,FL,Dixie County,12029,County,2024,Year,4649
+Florida,FL,Duval County,12031,County,2024,Year,186978
+Florida,FL,Escambia County,12033,County,2024,Year,75116
+Florida,FL,Flagler County,12035,County,2024,Year,45722
+Florida,FL,Franklin County,12037,County,2024,Year,3499
+Florida,FL,Gadsden County,12039,County,2024,Year,11094
+Florida,FL,Gilchrist County,12041,County,2024,Year,4720
+Florida,FL,Glades County,12043,County,2024,Year,2544
+Florida,FL,Gulf County,12045,County,2024,Year,4405
+Florida,FL,Hamilton County,12047,County,2024,Year,3407
+Florida,FL,Hardee County,12049,County,2024,Year,4574
+Florida,FL,Hendry County,12051,County,2024,Year,7264
+Florida,FL,Hernando County,12053,County,2024,Year,62645
+Florida,FL,Highlands County,12055,County,2024,Year,36884
+Florida,FL,Hillsborough County,12057,County,2024,Year,266645
+Florida,FL,Holmes County,12059,County,2024,Year,4729
+Florida,FL,Indian River County,12061,County,2024,Year,61145
+Florida,FL,Jackson County,12063,County,2024,Year,11948
+Florida,FL,Jefferson County,12065,County,2024,Year,4104
+Florida,FL,Lafayette County,12067,County,2024,Year,1508
+Florida,FL,Lake County,12069,County,2024,Year,122204
+Florida,FL,Lee County,12071,County,2024,Year,218994
+Florida,FL,Leon County,12073,County,2024,Year,51969
+Florida,FL,Levy County,12075,County,2024,Year,13380
+Florida,FL,Liberty County,12077,County,2024,Year,1518
+Florida,FL,Madison County,12079,County,2024,Year,4956
+Florida,FL,Manatee County,12081,County,2024,Year,120134
+Florida,FL,Marion County,12083,County,2024,Year,131618
+Florida,FL,Martin County,12085,County,2024,Year,51451
+Florida,FL,Miami-Dade County,12086,County,2024,Year,505044
+Florida,FL,Monroe County,12087,County,2024,Year,18618
+Florida,FL,Nassau County,12089,County,2024,Year,28235
+Florida,FL,Okaloosa County,12091,County,2024,Year,45375
+Florida,FL,Okeechobee County,12093,County,2024,Year,9634
+Florida,FL,Orange County,12095,County,2024,Year,216535
+Florida,FL,Osceola County,12097,County,2024,Year,71543
+Florida,FL,Palm Beach County,12099,County,2024,Year,359369
+Florida,FL,Pasco County,12101,County,2024,Year,147690
+Florida,FL,Pinellas County,12103,County,2024,Year,260835
+Florida,FL,Polk County,12105,County,2024,Year,177515
+Florida,FL,Putnam County,12107,County,2024,Year,21172
+Florida,FL,Santa Rosa County,12113,County,2024,Year,42163
+Florida,FL,Sarasota County,12115,County,2024,Year,161995
+Florida,FL,Seminole County,12117,County,2024,Year,87701
+Florida,FL,St. Johns County,12109,County,2024,Year,74444
+Florida,FL,St. Lucie County,12111,County,2024,Year,95047
+Florida,FL,Sumter County,12119,County,2024,Year,86191
+Florida,FL,Suwannee County,12121,County,2024,Year,12277
+Florida,FL,Taylor County,12123,County,2024,Year,5246
+Florida,FL,Union County,12125,County,2024,Year,2484
+Florida,FL,Volusia County,12127,County,2024,Year,167801
+Florida,FL,Wakulla County,12129,County,2024,Year,7707
+Florida,FL,Walton County,12131,County,2024,Year,19236
+Florida,FL,Washington County,12133,County,2024,Year,5928
+Florida,FL,Unknown,12999,County,2024,Year,*
