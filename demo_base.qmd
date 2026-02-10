@@ -109,7 +109,6 @@ if (!file.exists(path_data)){
     write_csv(df_pull, path_data, na = '')
 }
 
-
 ```
 ```{r}
 #| label: read_data 
@@ -132,11 +131,15 @@ focus_state <- "Pennsylvania"
 
 ```
 
-Let's take a look at what data exists in this dataset. We can get more information at [Data.CMS.gov](https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/medicare-monthly-enrollment). The dataset contains `r scales::label_comma()(nrow(df))` rows and `r ncol(df)` columns. The dataset covers the years from 2013 to `r max(df$year)`. For this analysis, we will only be looking at the total beneficiary counts (`tot_benes`) in `r focus_state` counties in 2020 and 2024.
+The Medicare beneficiary dataset for this analysis pulled down just a subset of the rows and columns of the full data - `r scales::label_comma()(nrow(df))` rows and `r ncol(df)` columns. The analysis is focusing in on only the total beneficiary counts (`tot_benes`) in `r focus_state` counties in 2020 and 2024.
 
 ## Initial Munge
 
-Once the data were loaded, we clean them for ease of use and to calculate the growth rate over this period in time. We renamed columns to make them easier to work with and subset the data to the state and years of interest.
+Once the data were loaded, we clean them for ease of use and to calculate the growth rate over this period in time. The following munging steps were performed^[Note that some of the filtering and subseting occurred in the API call. Keeping these steps included here allow for transparency as well as the ability reproduce with the full dataset]:
+
+-   renamed columns for ease of use
+-   filtered down the data to the particular state and focal years
+-   subset the columns to only those that were needed for analysis
 
 ```{r}
 #| label: initial_munge
@@ -190,6 +193,8 @@ Time to do some calculations!
 We calcualted growth rates to identify the counties with the largest growth during this period.
 
 ```{r}
+#| label: pivot
+
 #reshape
 df_gr <- df_lim |> 
     mutate(pd = ifelse(year == max(year), "end", "start")) |> 
@@ -206,13 +211,12 @@ df_gr <- df_gr |>
 
 ## Join Data
 
-Before we were able to visualize it, we needed to join the spatial data with the enrollment data by FIPS codes.
+Before we were able to visualize it, we needed to join the spatial data with the enrollment data using the county FIPS codes.
 
 ```{r}
 #| label: merge
 
-df_viz <- state_counties_sf %>%
-  left_join(df_gr, by = "county_fips")
+df_viz <- left_join(state_counties_sf, df_gr, by = "county_fips")
 
 ```
 
@@ -222,7 +226,7 @@ Okay, time for the fun stuff - data viz!
 
 ## Top Counties
 
-Here are `r {focus_state}`'s 5 largest counties in terms of growth rate over this period.
+Here is a table of `r {focus_state}`'s 5 largest counties in terms of growth rate over this period.
 
 ```{r}
 #| label: county growth rate tbl
@@ -251,7 +255,7 @@ df_gr |>
 
 ## State Map
 
-We can `r {focus_state}`'s visualize all county growth rate data for comparison in a map.
+We can visualize all `r {focus_state}`'s county growth rate data for comparison in a map.
 
 ```{r}
 #| label: county growth rate

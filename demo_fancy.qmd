@@ -1,7 +1,6 @@
 ---
 title: "Quarto Demo for DSAC/Eng CoP"
 subtitle: "`r paste('Medicare Growth in', params$state)`"
-author: "This guy"
 date: today
 execute:
   echo: false
@@ -34,9 +33,11 @@ if (interactive() && !exists("params")) {
 
 ```{r}
 #| label: dependencies
+#| output: false
 #| warnings: false
 #| echo: false
 library(tidyverse)
+library(httr)
 library(sf)
 library(tigris)
 library(scales)
@@ -68,33 +69,99 @@ This demo report renders a document, but Quarto has a number of output options i
 
 # BACKGROUND
 
-This is an **important** annual report where we look at growth in beneficiaries at the county level in `r params$state`. 
+This is an **important** annual report where we compare growth in beneficiaries at the county level in `r params$state`. Public data on [monthly Medicare enrollments](https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/medicare-monthly-enrollment) were pulled from Data.CMS.gov using the [API](https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/medicare-monthly-enrollment/api-docs).
 
 ```{r}
-#| label: read_data 
-#| cache: true
+#| label: fetch_api
 
-#relative path
-data_path <- "Medicare Monthly Enrollment/2025-10/Medicare Monthly Enrollment Data_October 2025.csv"
+# function to fetch data from data.cms.gov
+fetch_data <- function(state, year, dataset_uuid, baseurl = "https://data.cms.gov/data-api/v1") {
+  
+  endpoint <- str_glue("{baseurl}/dataset/{dataset_uuid}/data")
+  
+  request(endpoint) |>
+    req_url_query(
+      `filter[BENE_STATE_ABRVTN]` = state,
+      `filter[YEAR]` = year,
+      `filter[BENE_GEO_LVL]` = "County",
+      `filter[MONTH]` = "Year",
+      column = "BENE_STATE_DESC,BENE_STATE_ABRVTN,BENE_COUNTY_DESC,BENE_FIPS_CD,BENE_GEO_LVL,YEAR,MONTH,TOT_BENES"
+    ) |>
+    req_throttle(rate = 2) |>  #max requests/sec
+    req_retry(max_tries = 3) |> 
+    req_perform() |>
+    resp_body_json()
+
+}
+
+```
+
+```{r}
+#| label: api_params
+
+#parameters & global variables
+
+#dataset type indentifier
+dataset_uuid <- "d7fabe1e-d19b-4333-9eff-e80e0643f2fd"
+
+#states of interest
+states <- c("PA", "NY", "CA", "TX", "FL")
+
+#years of interest
+years <- c("2020", "2024")
+
+#form expanded tibble for params to pull
+params <- expand_grid(state = states, year = years, dataset_uuid = dataset_uuid)
+
+#local dataset path
+path_data <- "Data/medicare-monthly-enrollment_2025Oct_subset.csv"
+```
+
+```{r}
+#| label: data_access
+
+#run API if file doesn't already exist
+
+if (!file.exists(path_data)){
+
+    #API pull
+    df_pull <- params |> 
+        pmap(
+            possibly(fetch_data, otherwise = NULL),
+            .progress = TRUE
+            ) |> 
+    bind_rows()
+
+    #create data folder if it doesn't exist
+    dir.create(dirname(path_data), showWarnings = FALSE)
+
+    #store data locally
+    write_csv(df_pull, path_data, na = '')
+}
+
+```
+```{r}
+#| label: read_data 
 
 #read in data
 df <- read_csv(
-    data_path, 
-    col_types = c(year = "i", tot_benes = "d", .default = "c"),
+    path_data, 
+    col_types = c(year = "i", tot_benes = "i", .default = "c"),
+    na = c("", "NA", "*"),
     name_repair = tolower
     )
 
 ```
 
-Let's take a look at what data exists in this dataset. We can get more information at [Data.CMS.gov](https://data.cms.gov/resources/medicare-monthly-enrollment-data-dictionary). The dataset contains `r scales::label_comma()(nrow(df))` rows and `r ncol(df)` columns. The dataset covers the years from `r min(df$year)` to `r max(df$year)`. For this analysis, we will only be looking at the total beneficiary counts (`tot_benes`) in `r params$state` counties from `r params$start_year` to `r params$end_year`.
+The Medicare beneficiary dataset for this analysis pulled down just a subset of the rows and columns of the full data - `r scales::label_comma()(nrow(df))` rows and `r ncol(df)` columns. The analysis is focusing in on only the total beneficiary counts (`tot_benes`) in `r focus_state` counties in `r params$start_year` to `r params$end_year`.
 
 ## Initial Munge
 
-From here we will be doing the initial munge of the data. We do the following munging steps:
+Once the data were loaded, we clean them for ease of use and to calculate the growth rate over this period in time. The following munging steps were performed^[Note that some of the filtering and subseting occurred in the API call. Keeping these steps included here allow for transparency as well as the ability reproduce with the full dataset]:
 
--   rename columns for ease of use
--   filter down the data to the particular state and focal years
--   limit the columns to just what are needed
+-   renamed columns for ease of use
+-   filtered down the data to the particular state and focal years
+-   subset the columns to only those that were needed for analysis
 
 ```{r}
 #| label: initial_munge
@@ -113,11 +180,6 @@ df_lim <- df |>
         bene_geo_lvl == "County",
         year %in% c(params$start_year, params$end_year)
         )
-
-
-# #conver to date
-# df_lim <- df_lim |> 
-#     mutate(date = str_glue("{year} {month}") |> ym()) 
     
 #limit to cols of interest
 df_lim <- df_lim |> 
@@ -127,11 +189,10 @@ df_lim <- df_lim |>
 
 ## Access Spatial Data
 
-We need to pull in the spatial data to create a map, leveraging the [`tigris` package](https://github.com/walkerke/tigris). We'll import the the shapefiles from this package and join it to the data in a later step.
+We also brought in spatial data to map the growth rates across the state, leveraging the [`tigris` package](https://github.com/walkerke/tigris). 
 
 ```{r}
 #| label: spatial
-#| cache: true
 
 # Download county boundaries for your state
 state_counties <- counties(state = unique(df_lim$state_abbr), cb = TRUE, year = max(df_lim$year))
@@ -151,7 +212,8 @@ Time to do some calculations!
 
 ## Calculate Growth Rate
 
-Here we will create the growth rate. We pivot the data and calculate the growth rate for each county.
+We calcualted growth rates to identify the counties with the largest growth during this period.
+
 
 ::: {.callout-important collapse="true"}
 `growth rate = (end value / start value) - 1 `
@@ -176,7 +238,7 @@ df_gr <- df_gr |>
 
 ## Join Data
 
-Next up its time to join the data. We have the Medicare data and we need to join it with the shapefile so we can map it. We can join the dataset using the `fips code`.
+Before we were able to visualize it, we needed to join the spatial data with the enrollment data using the county FIPS codes.
 
 ::: {.callout-tip}
 
@@ -199,7 +261,7 @@ Okay, time for the fun stuff - data viz!
 
 ## Top Counties
 
-Here is a table (@tbl-growth-rates) with the top 5 counties and their growth rates.
+Here is a table (@tbl-growth-rates) of `r params$state`'s largest counties in terms of growth rate over this period.
 
 ```{r}
 #| label: tbl-growth-rates
@@ -229,12 +291,13 @@ df_gr |>
 
 ## State Map
 
-And below you can see in @fig-growth-rate here is a map of the state...
+We can visualize all `r {focus_state}`'s county growth rate data for comparison in a map (@fig-growth-rate).
 
 ```{r}
 #| label: fig-growth-rate
 #| fig-cap: County Growth Rates
 #| output: true
+#| warnings: false
 
 df_viz |> 
     ggplot() +
@@ -281,7 +344,7 @@ library(quarto)
 library(purrr)
 
 walk(
-  c("Kentucky", "Nebraska", "Mississippi"),
+  c("Texas", "California", "New York"),
   ~ quarto_render(
     input = "demo.qmd",
     execute_params = list(
