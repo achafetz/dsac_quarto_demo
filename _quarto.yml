@@ -16,6 +16,10 @@ website:
         text: Fancy Demo
       - href: about.qmd
         text: About
+    right:
+      - icon: github
+        href: https://github.com/DSACMS/dsac_quarto_demo
+        aria-label: GitHub
 
 format:
   html:

@@ -90,9 +90,9 @@ format:
 
 ::: {.columns}
 ::: {.column width="60%"}
- - Base Demo Version [Script](demo_base.qmd)/[Rendered Page](demo_base.html)
- - Fancy Demo Version [Script](demo_fancy.qmd)/[Rendered Page](demo_fancy.html)
- - Slides [Script](slides.qmd)
+ - Base Demo Version [Script](https://github.com/DSACMS/dsac_quarto_demo/blob/main/demo_base.qmd)/[Rendered Page](demo_base.html)
+ - Fancy Demo Version [Script](https://github.com/DSACMS/dsac_quarto_demo/blob/main/demo_fancy.qmd)/[Rendered Page](demo_fancy.html)
+ - Slides [Script](https://github.com/DSACMS/dsac_quarto_demo/blob/main/slides.qmd)
 :::
 
 ::: {.column width="30%"}

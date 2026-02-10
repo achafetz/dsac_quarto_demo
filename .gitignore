@@ -33,3 +33,5 @@ Thumbs.db
 *.tmp
 Medicare Monthly Enrollment/2025-10/Medicare Monthly Enrollment Data_October 2025.csv
 Medicare Monthly Enrollment.zip
+
+**/*.quarto_ipynb
