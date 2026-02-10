@@ -7,81 +7,46 @@
     "text": "Security and Responsible Disclosure Policy\nThe Centers for Medicare & Medicaid Services is committed to ensuring the security of the American public by protecting their information from unwarranted disclosure. We want security researchers to feel comfortable reporting vulnerabilities they have discovered so we can fix them and keep our users safe. We developed our disclosure policy to reflect our values and uphold our sense of responsibility to security researchers who share their expertise with us in good faith.\nSubmit a vulnerability: Vulnerability reports can be submitted through Bugcrowd. Reports may be submitted anonymously. If you share contact information, we will acknowledge receipt of your report within 3 business days.\nReview the HHS Disclosure Policy and websites in scope: https://www.hhs.gov/vulnerability-disclosure-policy/index.html.\nThis policy describes what systems and types of research are covered under this policy, how to send us vulnerability reports, and how long we ask security researchers to wait before publicly disclosing vulnerabilities."
   },
   {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "Contributing Guidelines",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About This Project",
     "section": "",
-    "text": "Contributing Guidelines\n\nWe’re so thankful you’re considering contributing to an open source project of the U.S. government! If you’re unsure about anything, just ask – or submit the issue or pull request anyway. The worst that can happen is you’ll be politely asked to change something. We appreciate all friendly contributions.\nWe encourage you to read this project’s CONTRIBUTING policy (you are here), its LICENSE, and its README.\n## Getting Started \n### Building Dependencies \n### Building the Project \n### Workflow and Branching \n### Testing Conventions \n### Coding Style and Linters \n### Writing Issues \n## Documentation \n## Policies\n### Open Source Policy We adhere to the CMS Open Source Policy. If you have any questions, just shoot us an email.\n### Security and Responsible Disclosure Policy Submit a vulnerability: Vulnerability reports can be submitted through Bugcrowd. Reports may be submitted anonymously. If you share contact information, we will acknowledge receipt of your report within 3 business days. For more information about our Security, Vulnerability, and Responsible Disclosure Policies, see SECURITY.md.\n## Public Domain This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the CC0 1.0 Universal public domain dedication as indicated in LICENSE. All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest."
+    "text": "This website serves as a practical demonstration of Quarto’s capabilities for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.\nBy comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality.\n\n\nWorking with Medicare and Medicaid data requires:\n\nReproducibility: Auditable analysis processes\nAutomation: Regular reporting cycles (monthly, quarterly, annual)\nTransparency: Stakeholders need to understand methodology\nFlexibility: Multiple output formats for different audiences\n\nQuarto addresses all these needs in a single, open-source framework."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Why Use Quarto for Data Analysis?",
+    "objectID": "about.html#project-purpose",
+    "href": "about.html#project-purpose",
+    "title": "About This Project",
     "section": "",
-    "text": "This website demonstrates the power and flexibility of Quarto for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from Data.CMS.gov, you’ll see how Quarto transforms your analytical process."
+    "text": "This website serves as a practical demonstration of Quarto’s capabilities for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.\nBy comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality.\n\n\nWorking with Medicare and Medicaid data requires:\n\nReproducibility: Auditable analysis processes\nAutomation: Regular reporting cycles (monthly, quarterly, annual)\nTransparency: Stakeholders need to understand methodology\nFlexibility: Multiple output formats for different audiences\n\nQuarto addresses all these needs in a single, open-source framework."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Why Use Quarto for Data Analysis?",
-    "section": "",
-    "text": "This website demonstrates the power and flexibility of Quarto for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from Data.CMS.gov, you’ll see how Quarto transforms your analytical process."
+    "objectID": "about.html#data-source",
+    "href": "about.html#data-source",
+    "title": "About This Project",
+    "section": "Data Source",
+    "text": "Data Source\nAll analyses use public Medicare monthly enrollment data from Data.CMS.gov, the official open data portal for the Centers for Medicare & Medicaid Services.\nThis real-world dataset demonstrates how Quarto handles:\n\nLarge government datasets\nTime-series analysis\nGeographic variations\nReproducible reporting requirements common in healthcare analytics"
   },
   {
-    "objectID": "index.html#what-is-quarto",
-    "href": "index.html#what-is-quarto",
-    "title": "Why Use Quarto for Data Analysis?",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— Wickham, Çetinkaya-Rundel, and Grolemund, R for Data Science (2e)\n\nQuarto allows you to author documents using:\n\nJupyter notebooks for interactive development\nPlaintext markdown in your favorite editor (VS Code, Jupyter, RStudio, etc.)"
+    "objectID": "about.html#technical-implementation",
+    "href": "about.html#technical-implementation",
+    "title": "About This Project",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\n\nQuarto Components Used\n\n1. YAML Configuration\nThe YAML header controls document behavior and appearance:\n\nDynamic date: Automatically updates to the render date\nDynamic subtitle: Can pull from parameters or calculations\nCode rendering defaults: Control whether code is shown or hidden by default\nOutput formats: HTML, PDF, Word, presentations, and more\n\n\n\n2. Code Chunks\nAnalyses are written in R (though Quarto supports Python, Julia, and Observable):\n\nExecute data processing and visualization\nGenerate tables and statistics\nCreate interactive elements\n\n\n\n3. Markdown and Inline Code\nNarrative text integrates seamlessly with code results:\n\nExplain methodology and findings\nInclude inline calculations (e.g., “The enrollment increased by r growth_rate%”)\nFormat professional reports\n\n\n\n\nAdvanced Features Demonstrated\n\nCode Folding\nIn the fancy demo, code is hidden by default but accessible via a “Show code” link in the upper right corner. This keeps the document clean for non-technical readers while maintaining full transparency.\nImplementation:\nyaml\nformat:\n  html:\n    code-fold: true\n\n\nTable of Contents\nAutomatic navigation based on document headers improves usability for longer reports.\nImplementation:\nformat:\n  html:\n    toc: true\n\n\nCustom CSS Styling\nExternal CSS files allow consistent branding across multiple reports without cluttering your Quarto document.\nImplementation:\nformat:\n  html:\n    css: styles.css\n\n\nParameterized Reports\nThe params feature in YAML enables template-based reporting:\nImplementation:\nparams:\n  state: \"California\"\n  year: 2024\nThese parameters can be referenced throughout the document and changed programmatically to generate reports for all states, years, or other dimensions automatically.\nExample use case: Generate 50 state-specific reports with a single command:\n# R code to render for all states\nstates &lt;- state.name\nfor (state in states) {\n  quarto::quarto_render(\n    \"analysis.qmd\",\n    execute_params = list(state = state),\n    output_file = paste0(\"report_\", state, \".html\")\n  )\n}"
   },
   {
-    "objectID": "index.html#why-quarto-matters-for-your-analytics",
-    "href": "index.html#why-quarto-matters-for-your-analytics",
-    "title": "Why Use Quarto for Data Analysis?",
-    "section": "Why Quarto Matters for Your Analytics",
-    "text": "Why Quarto Matters for Your Analytics\n\nKey Benefits\n\n📊 Reproducible: Your analysis, code, and results are all in one place, ensuring anyone can recreate your work\n🤖 Automatable: Generate reports programmatically for multiple scenarios or time periods\n⚡ Dynamic: Update your data and automatically refresh all visualizations and statistics\n🌐 Open Source: Free, community-driven, and continuously improving\n\n\n\nCore Elements\nQuarto documents combine three powerful components:\n\nYAML Header (+ optional CSS): Controls document formatting, output options, and parameters\nCode Chunks: Execute code in R, Python, Julia, or Observable to generate results\nMarkdown Text: Write narrative prose and include inline code for seamless integration\n\nTogether, these elements create presentation-ready visualizations and reports with minimal effort."
+    "objectID": "about.html#getting-started-with-quarto",
+    "href": "about.html#getting-started-with-quarto",
+    "title": "About This Project",
+    "section": "Getting Started with Quarto",
+    "text": "Getting Started with Quarto\n\nInstallation\n\nInstall Quarto from quarto.org\nUse with VS Code, Jupyter, RStudio, Positron, or any text editor\nRender documents with quarto render or IDE buttons\n\n\n\nResources\n\nQuarto Documentation\nR for Data Science (2e) - Includes Quarto chapters\nQuarto Gallery - Example projects"
   },
   {
-    "objectID": "index.html#explore-the-demonstrations",
-    "href": "index.html#explore-the-demonstrations",
-    "title": "Why Use Quarto for Data Analysis?",
-    "section": "Explore the Demonstrations",
-    "text": "Explore the Demonstrations\nI’ve created two versions of the same Medicare enrollment analysis to showcase Quarto’s flexibility:\n\n📄 Base Demo\nA standard Quarto rendered document showing the fundamental capabilities:\n\nClean, professional output\nIntegrated code and results\nBasic formatting\n\n\n\n✨ Fancy Demo\nAn enhanced version demonstrating advanced features:\n\nDynamic metadata: Auto-updating date and subtitle\nCode folding: Readers can toggle code visibility via a link\nTable of Contents: Easy navigation through sections\nCustom CSS styling: Professional branding from an external stylesheet\nParameterized reporting: Uses params in YAML for reusable templates (e.g., generate reports for all 50 states automatically)"
-  },
-  {
-    "objectID": "index.html#real-world-application",
-    "href": "index.html#real-world-application",
-    "title": "Why Use Quarto for Data Analysis?",
-    "section": "Real-World Application",
-    "text": "Real-World Application\nThe analysis uses Medicare monthly enrollment data from Data.CMS.gov, demonstrating how Quarto handles real government data in a reproducible, shareable format."
-  },
-  {
-    "objectID": "index.html#get-started",
-    "href": "index.html#get-started",
-    "title": "Why Use Quarto for Data Analysis?",
-    "section": "Get Started",
-    "text": "Get Started\nReady to learn more about implementing Quarto in your workflow? Visit the About page to understand the methodology and technical details behind these demonstrations.\n\nAll data are public and sourced from Data.CMS.gov\nDisclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own."
-  },
-  {
-    "objectID": "COMMUNITY.html",
-    "href": "COMMUNITY.html",
-    "title": "DSAC Quarto Demo",
-    "section": "",
-    "text": "DSAC Quarto Demo is supported by a dedicated team of individuals fulfilling various roles to ensure its success, security, and alignment with government standards and agency goals."
-  },
-  {
-    "objectID": "COMMUNITY.html#project-members",
-    "href": "COMMUNITY.html#project-members",
-    "title": "DSAC Quarto Demo",
-    "section": "",
-    "text": "DSAC Quarto Demo is supported by a dedicated team of individuals fulfilling various roles to ensure its success, security, and alignment with government standards and agency goals."
-  },
-  {
-    "objectID": "COMMUNITY.html#project-members-1",
-    "href": "COMMUNITY.html#project-members-1",
-    "title": "DSAC Quarto Demo",
-    "section": "Project Members",
-    "text": "Project Members\n\n\n\nRole\nName\nAffiliation\n\n\n\n\nTechnical Lead\nAaron Chafetz\nCMS"
+    "objectID": "about.html#repository",
+    "href": "about.html#repository",
+    "title": "About This Project",
+    "section": "Repository",
+    "text": "Repository\nThis project is hosted on GitHub at https://github.com/achafetz/dsac_quarto_demo/. Feel free to explore the code, fork the repository, or contribute improvements.\n\nAll data are public and sourced from Data.CMS.gov\nDisclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own."
   },
   {
     "objectID": "demo_fancy.html",
@@ -102,7 +67,7 @@
     "href": "demo_fancy.html#access-spatial-data",
     "title": "Quarto Demo for DSAC/Eng CoP",
     "section": "Access Spatial Data",
-    "text": "Access Spatial Data\nWe also brought in spatial data to map the growth rates across the state, leveraging the tigris package."
+    "text": "Access Spatial Data\nWe also brought in spatial data to map the growth rates across the state, leveraging the tigris package.\n\n\n\n  |                                                                            \n  |                                                                      |   0%\n  |                                                                            \n  |                                                                      |   1%\n  |                                                                            \n  |=                                                                     |   1%\n  |                                                                            \n  |=                                                                     |   2%\n  |                                                                            \n  |==                                                                    |   2%\n  |                                                                            \n  |==                                                                    |   3%\n  |                                                                            \n  |==                                                                    |   4%\n  |                                                                            \n  |===                                                                   |   4%\n  |                                                                            \n  |===                                                                   |   5%\n  |                                                                            \n  |====                                                                  |   5%\n  |                                                                            \n  |====                                                                  |   6%\n  |                                                                            \n  |=====                                                                 |   6%\n  |                                                                            \n  |=====                                                                 |   7%\n  |                                                                            \n  |=====                                                                 |   8%\n  |                                                                            \n  |======                                                                |   8%\n  |                                                                            \n  |======                                                                |   9%\n  |                                                                            \n  |=======                                                               |   9%\n  |                                                                            \n  |=======                                                               |  10%\n  |                                                                            \n  |=======                                                               |  11%\n  |                                                                            \n  |========                                                              |  11%\n  |                                                                            \n  |========                                                              |  12%\n  |                                                                            \n  |=========                                                             |  12%\n  |                                                                            \n  |==========                                                            |  14%\n  |                                                                            \n  |==========                                                            |  15%\n  |                                                                            \n  |============                                                          |  16%\n  |                                                                            \n  |=====================                                                 |  30%\n  |                                                                            \n  |==========================                                            |  37%\n  |                                                                            \n  |===========================                                           |  38%\n  |                                                                            \n  |===========================                                           |  39%\n  |                                                                            \n  |============================                                          |  39%\n  |                                                                            \n  |===============================                                       |  44%\n  |                                                                            \n  |===============================                                       |  45%\n  |                                                                            \n  |================================                                      |  46%\n  |                                                                            \n  |==================================                                    |  48%\n  |                                                                            \n  |====================================                                  |  51%\n  |                                                                            \n  |====================================                                  |  52%\n  |                                                                            \n  |=====================================                                 |  53%\n  |                                                                            \n  |======================================                                |  54%\n  |                                                                            \n  |=======================================                               |  56%\n  |                                                                            \n  |========================================                              |  57%\n  |                                                                            \n  |=========================================                             |  58%\n  |                                                                            \n  |=========================================                             |  59%\n  |                                                                            \n  |==========================================                            |  60%\n  |                                                                            \n  |===========================================                           |  61%\n  |                                                                            \n  |===========================================                           |  62%\n  |                                                                            \n  |============================================                          |  63%\n  |                                                                            \n  |===============================================                       |  67%\n  |                                                                            \n  |==================================================                    |  72%\n  |                                                                            \n  |===================================================                   |  73%\n  |                                                                            \n  |====================================================                  |  74%\n  |                                                                            \n  |====================================================                  |  75%\n  |                                                                            \n  |======================================================                |  77%\n  |                                                                            \n  |======================================================                |  78%\n  |                                                                            \n  |=======================================================               |  78%\n  |                                                                            \n  |=======================================================               |  79%\n  |                                                                            \n  |========================================================              |  80%\n  |                                                                            \n  |==================================================================    |  94%\n  |                                                                            \n  |======================================================================| 100%"
   },
   {
     "objectID": "demo_fancy.html#calculate-growth-rate",
@@ -189,46 +154,60 @@
     "text": "Quarto Demo on GitHub + GH Pages\n\n\n\nBase Demo Version Script/Rendered Page\nFancy Demo Version Script/Rendered Page\nSlides Script"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About This Project",
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "Contributing Guidelines",
     "section": "",
-    "text": "This website serves as a practical demonstration of Quarto’s capabilities for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.\nBy comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality.\n\n\nWorking with Medicare and Medicaid data requires:\n\nReproducibility: Auditable analysis processes\nAutomation: Regular reporting cycles (monthly, quarterly, annual)\nTransparency: Stakeholders need to understand methodology\nFlexibility: Multiple output formats for different audiences\n\nQuarto addresses all these needs in a single, open-source framework."
+    "text": "Contributing Guidelines\n\nWe’re so thankful you’re considering contributing to an open source project of the U.S. government! If you’re unsure about anything, just ask – or submit the issue or pull request anyway. The worst that can happen is you’ll be politely asked to change something. We appreciate all friendly contributions.\nWe encourage you to read this project’s CONTRIBUTING policy (you are here), its LICENSE, and its README.\n## Getting Started \n### Building Dependencies \n### Building the Project \n### Workflow and Branching \n### Testing Conventions \n### Coding Style and Linters \n### Writing Issues \n## Documentation \n## Policies\n### Open Source Policy We adhere to the CMS Open Source Policy. If you have any questions, just shoot us an email.\n### Security and Responsible Disclosure Policy Submit a vulnerability: Vulnerability reports can be submitted through Bugcrowd. Reports may be submitted anonymously. If you share contact information, we will acknowledge receipt of your report within 3 business days. For more information about our Security, Vulnerability, and Responsible Disclosure Policies, see SECURITY.md.\n## Public Domain This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the CC0 1.0 Universal public domain dedication as indicated in LICENSE. All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest."
   },
   {
-    "objectID": "about.html#project-purpose",
-    "href": "about.html#project-purpose",
-    "title": "About This Project",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Why Use Quarto for Data Analysis?",
     "section": "",
-    "text": "This website serves as a practical demonstration of Quarto’s capabilities for data analysis and reporting, specifically tailored for analysts working with healthcare and government data.\nBy comparing two versions of the same Medicare enrollment analysis, you can see firsthand how Quarto’s features enhance reproducibility, automation, and presentation quality.\n\n\nWorking with Medicare and Medicaid data requires:\n\nReproducibility: Auditable analysis processes\nAutomation: Regular reporting cycles (monthly, quarterly, annual)\nTransparency: Stakeholders need to understand methodology\nFlexibility: Multiple output formats for different audiences\n\nQuarto addresses all these needs in a single, open-source framework."
+    "text": "This website demonstrates the power and flexibility of Quarto for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from Data.CMS.gov, you’ll see how Quarto transforms your analytical process."
   },
   {
-    "objectID": "about.html#data-source",
-    "href": "about.html#data-source",
-    "title": "About This Project",
-    "section": "Data Source",
-    "text": "Data Source\nAll analyses use public Medicare monthly enrollment data from Data.CMS.gov, the official open data portal for the Centers for Medicare & Medicaid Services.\nThis real-world dataset demonstrates how Quarto handles:\n\nLarge government datasets\nTime-series analysis\nGeographic variations\nReproducible reporting requirements common in healthcare analytics"
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "",
+    "text": "This website demonstrates the power and flexibility of Quarto for data science and analytics workflows. Through practical examples using Medicare monthly enrollment data from Data.CMS.gov, you’ll see how Quarto transforms your analytical process."
   },
   {
-    "objectID": "about.html#technical-implementation",
-    "href": "about.html#technical-implementation",
-    "title": "About This Project",
-    "section": "Technical Implementation",
-    "text": "Technical Implementation\n\nQuarto Components Used\n\n1. YAML Configuration\nThe YAML header controls document behavior and appearance:\n\nDynamic date: Automatically updates to the render date\nDynamic subtitle: Can pull from parameters or calculations\nCode rendering defaults: Control whether code is shown or hidden by default\nOutput formats: HTML, PDF, Word, presentations, and more\n\n\n\n2. Code Chunks\nAnalyses are written in R (though Quarto supports Python, Julia, and Observable):\n\nExecute data processing and visualization\nGenerate tables and statistics\nCreate interactive elements\n\n\n\n3. Markdown and Inline Code\nNarrative text integrates seamlessly with code results:\n\nExplain methodology and findings\nInclude inline calculations (e.g., “The enrollment increased by r growth_rate%”)\nFormat professional reports\n\n\n\n\nAdvanced Features Demonstrated\n\nCode Folding\nIn the fancy demo, code is hidden by default but accessible via a “Show code” link in the upper right corner. This keeps the document clean for non-technical readers while maintaining full transparency.\nImplementation:\nyaml\nformat:\n  html:\n    code-fold: true\n\n\nTable of Contents\nAutomatic navigation based on document headers improves usability for longer reports.\nImplementation:\nformat:\n  html:\n    toc: true\n\n\nCustom CSS Styling\nExternal CSS files allow consistent branding across multiple reports without cluttering your Quarto document.\nImplementation:\nformat:\n  html:\n    css: styles.css\n\n\nParameterized Reports\nThe params feature in YAML enables template-based reporting:\nImplementation:\nparams:\n  state: \"California\"\n  year: 2024\nThese parameters can be referenced throughout the document and changed programmatically to generate reports for all states, years, or other dimensions automatically.\nExample use case: Generate 50 state-specific reports with a single command:\n# R code to render for all states\nstates &lt;- state.name\nfor (state in states) {\n  quarto::quarto_render(\n    \"analysis.qmd\",\n    execute_params = list(state = state),\n    output_file = paste0(\"report_\", state, \".html\")\n  )\n}"
+    "objectID": "index.html#what-is-quarto",
+    "href": "index.html#what-is-quarto",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n\n“Quarto provides a unified authoring framework for data science, combining your code, its results, and your prose. Quarto documents are fully reproducible and support dozens of output formats, like PDFs, Word files, presentations, and more.”\n— Wickham, Çetinkaya-Rundel, and Grolemund, R for Data Science (2e)\n\nQuarto allows you to author documents using:\n\nJupyter notebooks for interactive development\nPlaintext markdown in your favorite editor (VS Code, Jupyter, RStudio, etc.)"
   },
   {
-    "objectID": "about.html#getting-started-with-quarto",
-    "href": "about.html#getting-started-with-quarto",
-    "title": "About This Project",
-    "section": "Getting Started with Quarto",
-    "text": "Getting Started with Quarto\n\nInstallation\n\nInstall Quarto from quarto.org\nUse with VS Code, Jupyter, RStudio, Positron, or any text editor\nRender documents with quarto render or IDE buttons\n\n\n\nResources\n\nQuarto Documentation\nR for Data Science (2e) - Includes Quarto chapters\nQuarto Gallery - Example projects"
+    "objectID": "index.html#why-quarto-matters-for-your-analytics",
+    "href": "index.html#why-quarto-matters-for-your-analytics",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Why Quarto Matters for Your Analytics",
+    "text": "Why Quarto Matters for Your Analytics\n\nKey Benefits\n\n📊 Reproducible: Your analysis, code, and results are all in one place, ensuring anyone can recreate your work\n🤖 Automatable: Generate reports programmatically for multiple scenarios or time periods\n⚡ Dynamic: Update your data and automatically refresh all visualizations and statistics\n🌐 Open Source: Free, community-driven, and continuously improving\n\n\n\nCore Elements\nQuarto documents combine three powerful components:\n\nYAML Header (+ optional CSS): Controls document formatting, output options, and parameters\nCode Chunks: Execute code in R, Python, Julia, or Observable to generate results\nMarkdown Text: Write narrative prose and include inline code for seamless integration\n\nTogether, these elements create presentation-ready visualizations and reports with minimal effort."
   },
   {
-    "objectID": "about.html#repository",
-    "href": "about.html#repository",
-    "title": "About This Project",
-    "section": "Repository",
-    "text": "Repository\nThis project is hosted on GitHub at https://github.com/achafetz/dsac_quarto_demo/. Feel free to explore the code, fork the repository, or contribute improvements.\n\nAll data are public and sourced from Data.CMS.gov\nDisclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own."
+    "objectID": "index.html#explore-the-demonstrations",
+    "href": "index.html#explore-the-demonstrations",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Explore the Demonstrations",
+    "text": "Explore the Demonstrations\nI’ve created two versions of the same Medicare enrollment analysis to showcase Quarto’s flexibility:\n\n📄 Base Demo\nA standard Quarto rendered document showing the fundamental capabilities:\n\nClean, professional output\nIntegrated code and results\nBasic formatting\n\n\n\n✨ Fancy Demo\nAn enhanced version demonstrating advanced features:\n\nDynamic metadata: Auto-updating date and subtitle\nCode folding: Readers can toggle code visibility via a link\nTable of Contents: Easy navigation through sections\nCustom CSS styling: Professional branding from an external stylesheet\nParameterized reporting: Uses params in YAML for reusable templates (e.g., generate reports for all 50 states automatically)"
+  },
+  {
+    "objectID": "index.html#real-world-application",
+    "href": "index.html#real-world-application",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Real-World Application",
+    "text": "Real-World Application\nThe analysis uses Medicare monthly enrollment data from Data.CMS.gov, demonstrating how Quarto handles real government data in a reproducible, shareable format."
+  },
+  {
+    "objectID": "index.html#get-started",
+    "href": "index.html#get-started",
+    "title": "Why Use Quarto for Data Analysis?",
+    "section": "Get Started",
+    "text": "Get Started\nReady to learn more about implementing Quarto in your workflow? Visit the About page to understand the methodology and technical details behind these demonstrations.\n\nAll data are public and sourced from Data.CMS.gov\nDisclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of Centers for Medicare and Medicaid Services. All errors remain our own."
   },
   {
     "objectID": "demo_base.html",
@@ -285,5 +264,26 @@
     "title": "Quarto Demo for DSAC/Eng CoP",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nNote that some of the filtering and subseting occurred in the API call. Keeping these steps included here allow for transparency as well as the ability reproduce with the full dataset↩︎"
+  },
+  {
+    "objectID": "COMMUNITY.html",
+    "href": "COMMUNITY.html",
+    "title": "DSAC Quarto Demo",
+    "section": "",
+    "text": "DSAC Quarto Demo is supported by a dedicated team of individuals fulfilling various roles to ensure its success, security, and alignment with government standards and agency goals."
+  },
+  {
+    "objectID": "COMMUNITY.html#project-members",
+    "href": "COMMUNITY.html#project-members",
+    "title": "DSAC Quarto Demo",
+    "section": "",
+    "text": "DSAC Quarto Demo is supported by a dedicated team of individuals fulfilling various roles to ensure its success, security, and alignment with government standards and agency goals."
+  },
+  {
+    "objectID": "COMMUNITY.html#project-members-1",
+    "href": "COMMUNITY.html#project-members-1",
+    "title": "DSAC Quarto Demo",
+    "section": "Project Members",
+    "text": "Project Members\n\n\n\nRole\nName\nAffiliation\n\n\n\n\nTechnical Lead\nAaron Chafetz\nCMS"
   }
 ]
