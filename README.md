@@ -47,6 +47,8 @@ Below is the folder structure for this repository, run with `r fs::dir_tree(recu
 ├── images
 ├── index.qmd
 ├── presentation-styles.css
+├── renv
+├── renv.lock
 ├── repolinter.json
 └── slides.qmd
 ```
