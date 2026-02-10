@@ -81,7 +81,7 @@ states <- c("PA", "NY", "CA", "TX", "FL")
 years <- c("2020", "2024")
 
 #form expanded tibble for params to pull
-params <- expand_grid(state = states, year = years, dataset_uuid = dataset_uuid)
+api_params <- expand_grid(state = states, year = years, dataset_uuid = dataset_uuid)
 
 #local dataset path
 path_data <- "Data/medicare-monthly-enrollment_2025Oct_subset.csv"
@@ -95,7 +95,7 @@ path_data <- "Data/medicare-monthly-enrollment_2025Oct_subset.csv"
 if (!file.exists(path_data)){
 
     #API pull
-    df_pull <- params |> 
+    df_pull <- api_params |> 
         pmap(
             possibly(fetch_data, otherwise = NULL),
             .progress = TRUE
