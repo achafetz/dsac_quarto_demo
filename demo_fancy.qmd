@@ -1,7 +1,10 @@
 ---
 title: "Quarto Demo for DSAC/Eng CoP"
 subtitle: "`r paste('Medicare Growth in', params$state)`"
-date: today
+date: now
+date-format: "MMMM D, YYYY"
+language:
+  title-block-published: "Last Updated"
 execute:
   echo: false
   warning: false
@@ -188,7 +191,7 @@ df_lim <- df |>
     county_fips = bene_fips_cd
   ) |>
   filter(
-    state == {{params$state}},
+    state == params$state,
     month == "Year",
     bene_geo_lvl == "County",
     year %in% c(params$start_year, params$end_year)
@@ -266,6 +269,7 @@ This is another example of showing an important code even if most are not shown 
 :::
 ```{r}
 #| label: merge
+#| echo: true
 
 df_viz <- left_join(state_counties_sf, df_gr, by = "county_fips")
 
